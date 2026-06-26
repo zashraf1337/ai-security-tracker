@@ -184,7 +184,12 @@
   td { padding: 8px 10px; border-bottom: 1px solid #e7e5e4; vertical-align: top; }
   strong { color: #1c1917; } a { color: #b45309; }
   hr { border: none; border-top: 1px solid #d6d3d1; margin: 32px 0; }
-  @media print { body { max-width: none; margin: 0; padding: 24px; } }</style>
+  @media print { body { max-width: none; margin: 0; padding: 24px; } }
+  .app-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #d6d3d1; }
+  .credits { color: #78716c; font-size: 12px; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .credits a { color: inherit; display: inline-flex; align-items: center; text-decoration: none; }
+  .credits a:hover { color: #b45309; text-decoration: underline; }
+  .credits svg { width: 15px; height: 15px; fill: currentcolor; }</style>
 </head>
 <body>
 <header id="title-block-header">
@@ -1730,6 +1735,197 @@ with IR firms and MSSPs for distribution.</p>
 runtime that reasons about agent plans, tool calls, and data lineage,
 with simulation, a 'deny-explain' UX, and auditing built in.</p>
 <p><strong>10. Update cadence</strong></p>
+<p>Weekly Update — Week of 2026-06-26 (Annual Historical Sweep)</p>
+<p>Combined run: the normal 7-day weekly window (2026-06-19 to
+2026-06-26, attempt 1) plus the first Annual Historical Sweep - no prior
+ANNUAL_SWEEP had ever been logged. This was not a quarterly deep dive
+(the last deep dive, 2026-05-18, is only 39 days old). The sweep
+deliberately looked backward to catch solid 2024-2025-funded AI-security
+companies, several with marquee research/founder pedigrees, that predate
+this tracker's April 2026 start - the same blind spot that hid Virtue AI
+until Meta acqui-hired it. Net result: 21 companies added (2 in-window,
+5 recent-month catch-ups, 14 historical/geographic backfill), 5 existing
+rows refreshed, 1 missed exit recovered (Koi to Palo Alto Networks), 22
+funding rounds, 12 open-source tools, 10 people, 5 themes and 3 ideas.
+Connectivity note: the curl preflight returned HTTP 403 (raw egress is
+blocked in this environment), but the research tools route separately
+and were verified live, so the run proceeded.</p>
+<p>Funding Activity</p>
+<p>2026-06-24 - Runlayer: $30M Series A (Felicis, with Khosla Ventures)
+for an agent-governance 'control layer' sitting between employees / AI
+agents and enterprise tools, data and policies; total $42M. Customers
+include Instacart, Gusto, Decagon, Opendoor and dbt Labs.</p>
+<p>2026-06-17 - Tenet Security: $6M seed (The Westly Group, MizMaa
+Ventures) to prevent attacks on enterprise AI agents using pre-execution
+'Agent-side Simulation.'</p>
+<p>2026-06-17 - NeuralTrust: EUR 17.2M (~$20M) seed (Alstin Capital),
+billed as the largest EU cybersecurity seed to date, to secure and
+govern enterprise AI agents (Barcelona).</p>
+<p>2026-06-04 - Opal Security: $23M (Greylock, Battery Ventures; total
+$59M) for AI-native access governance spanning human, non-human and
+agentic identities; launched 'Agents in Opal' at Identiverse 2026.</p>
+<p>2026-06-02 - ZeroDrift: $10M seed for a 'compliance firewall' that
+checks AI-generated email, chat, voice and video against regulatory
+rules before enterprise systems send them.</p>
+<p>Backfill rounds added to the tracker (predating the sweep window):
+Tenex.AI $250M Series B (3/31, total $277M), Cylake $45M seed (Nir Zuk),
+Irregular $80M (~$450M val), depthfirst ~$120M across two 2026 rounds,
+Dreadnode $14M, Keycard $38M, Aurascape $50M, Singulr AI $10M, plus
+General Analysis, NanoCo, Secludy, Symbiotic Security, Jericho Security,
+Prime Security, Operant AI, Onit Security and ZAST.AI. About 22 rounds
+in all.</p>
+<p>Exits &amp; M&amp;A</p>
+<p>No new in-window AI+security exits this week. The Virtue AI to Meta
+Superintelligence Labs acqui-hire (6/25) was already logged in last
+week's run.</p>
+<p>Backfill recovery: Palo Alto Networks completed its ~$400M
+acquisition of Koi (4/14/26), forming 'Agentic Endpoint Security' (AES)
+now integrated into Prisma AIRS and Cortex XDR. Koi (Israeli, founded
+2024 by Unit 8200 alumni, $48M raised) had been a tracker stub; the row
+is now remediated and marked acquired. The deal had been missed in prior
+weekly runs.</p>
+<p>New Entrants</p>
+<p>In-window: Runlayer (agent governance / MCP control layer) and Tenet
+Security (agent runtime security via 'Agent-side Simulation').</p>
+<p>Recent-month catch-ups now tracked: Opal Security (AI-native access
+governance), ZeroDrift (AI-communications compliance firewall), General
+Analysis (agentic AI red-teaming; founders ex-NVIDIA / Cohere /
+DeepMind), NanoCo (NanoClaw secure local-first agent assistant), Secludy
+(privacy-preserving synthetic data for GenAI).</p>
+<p>Annual-sweep backfill - frontier / research-founded labs and
+pre-tracker companies: Irregular (ex-Pattern Labs; frontier AI security
+lab; SOLVE framework; Dan Lahav / Omer Nevo); Dreadnode (autonomous AI
+red-teaming; Will Pearce, ex-Microsoft/NVIDIA AI red teams); depthfirst
+(AI app/code security; ex-DeepMind co-founder); Aurascape (shadow-AI
+data protection; ex-Zscaler); Prime Security (AI security-by-design);
+Operant AI (runtime cloud + AI security); Jericho Security (GenAI /
+deepfake phishing defense); Singulr AI (enterprise AI governance).</p>
+<p>Geographic backfill: Keycard (Halifax, Canada - agent identity / IAM;
+a16z, boldstart, Acrew); Symbiotic Security (NY / France - security for
+AI-generated code); Fencio (India - runtime agent guardrails); Cylake
+(Israel - Nir Zuk's AI-native, sovereign on-prem SecOps, $45M from
+Greylock).</p>
+<p>Tracked-Startup Updates</p>
+<p>Koi (#96): stub remediated and marked acquired by Palo Alto Networks
+(~$400M, 4/14/26) -&gt; Palo Alto 'Agentic Endpoint Security'; founders
+Amit Assaraf, Idan Dardikman and Itay Kruk added.</p>
+<p>Tenex.AI (#110): refreshed - $250M Series B closed 3/31/26 (total
+$277M); founders (Eric Foster / ex-Cyderes, Venkata Koppaka / ex-Google
+SecOps) and Sarasota HQ filled in.</p>
+<p>NeuralTrust (#148): stub remediated and EUR 17.2M seed (6/17)
+recorded; founders and Barcelona HQ added.</p>
+<p>Qevlar AI (#151): stub remediated - Paris HQ, founders Ahmed Achchak
+and Hamza Sayah, $30M (Partech / Forgepoint / EQT Ventures).</p>
+<p>Token Security (#97): founders (Itamar Apelblat, Ido Shlomo) and $27M
+total filled in; flagged as a likely duplicate of row #58 for later
+reconciliation.</p>
+<p>Theme Signals</p>
+<p><strong>Frontier AI security labs are now a distinct
+category.</strong> Irregular, Virtue AI, General Analysis and Dreadnode
+show specialist labs that red-team and harden frontier models in
+partnership with the model builders - and are prime acqui-hire targets
+(Virtue -&gt; Meta).</p>
+<p><strong>Agent identity &amp; authorization is consolidating into a
+control plane.</strong> Keycard, Opal, NewCore, Token Security and
+Astrix are racing to own verifiable agent identity and scoped, delegated
+authorization.</p>
+<p><strong>Runtime agent interception / egress firewalls are
+proliferating.</strong> Tenet's pre-execution simulation, plus
+open-source egress tools (Pipelock, Gen Digital's Sage, APort), point to
+the agent tool-call as the new enforcement point.</p>
+<p><strong>Agentic reverse engineering went mainstream at RECon
+2026.</strong> The 6/19-21 program was themed around agent-driven RE,
+with a wave of headless MCP servers for IDA / Ghidra / Binary Ninja and
+the first agentic-RE benchmark (AgentRE-Bench).</p>
+<p><strong>Sovereign / on-prem AI security is drawing marquee
+founders.</strong> Nir Zuk's Cylake ($45M, no public cloud) and EU
+sovereign-inference plays signal data-sovereignty as a fundable
+wedge.</p>
+<p>Failures &amp; Pivots</p>
+<p>No AI+security startup shutdowns, layoffs or pivots were identified
+in-window. Negative signal of note: OffensiveCon 2026 (Berlin) ran its
+full program with zero AI-security talks - a reminder that the deep VR /
+exploitation community remains deliberately AI-skeptical even as RECon
+leans in.</p>
+<p>New Venture Ideas</p>
+<p><strong>Idea #35 - Portable 'agent dry-run' simulation
+standard.</strong> A vendor-neutral pre-execution simulation /
+intervention layer (the Tenet capability, but cross-framework and
+policy-driven); MCP standardization makes a shared 'likely next action'
+corpus feasible.</p>
+<p><strong>Idea #36 - MCP supply-chain trust registry &amp;
+attestation.</strong> The MCP-server ecosystem has scanners (Cisco,
+GitHub) but no signing / attestation / reputation layer; build the trust
+registry and become the npm-audit of agent tools.</p>
+<p><strong>Idea #37 - Hosted agentic vuln-research pipeline for
+defenders.</strong> Productize the fragmented RECon-era OSS (headless
+MCP + AgentRE-Bench + hallucination guards) into an audited, hosted
+cyber-reasoning service for product-security teams.</p>
+<p>People &amp; Thought Leaders</p>
+<p>New entries (10): Nir Zuk and Udi Shamir (Cylake; founders of Palo
+Alto Networks and SentinelOne respectively); Dan Lahav and Omer Nevo
+(Irregular); Will Pearce and Nick Landers (Dreadnode); Barak Sternberg
+and Nevo Poran (Tenet; ex-Cisco AI Defense); Moinul Khan (Aurascape;
+ex-Zscaler); Ian Livingstone (Keycard; ex-Manifold). Continues the
+practice of adding researcher / operator founders before they are widely
+indexed - the explicit Virtue-AI lesson.</p>
+<p>People -&gt; company tripwire: no further unlisted anchor-name
+ventures surfaced this week beyond those captured above.</p>
+<p>Tools &amp; Open-Source Releases</p>
+<p>RECon 2026 (6/19-21, in-window): IDASQL (Elias Bachaalany - a SQL
+interface to IDA Pro, agent-agnostic); Tim Blazytko's headless MCP suite
+(binary-ninja-headless-mcp, ghidra-headless-mcp, and an
+agentic-malware-analysis Claude skill); AgentRE-Bench (an agentic-RE
+benchmark with a hallucination penalty).</p>
+<p>Vulnerability discovery: OpenAnt (Knostic - two-stage LLM
+detect-then-adversarially-verify) and FuzzingBrain (a DARPA AIxCC
+finalist that claims 62 zero-days).</p>
+<p>Agent / MCP defense: Cisco AI Defense MCP Scanner; Pipelock (agent
+egress firewall); Gen Digital's Sage (runtime Agent Detection &amp;
+Response); from [un]prompted 2026, SYARA / SuperYARA (Palo Alto Unit 42)
+and Sondera's Cedar-policy coding-agent hooks; and AIOpsDoom /
+AIOpsShield (USENIX Security 2026). Twelve tools were added to the
+tracker.</p>
+<p>Conference Highlights</p>
+<p>RECon 2026 (Montreal, 6/19-21) - the richest in-window source; the
+entire program leaned into agentic reverse engineering, including talks
+on agentic RE of Claude's security architecture, deobfuscation in the
+age of agentic RE, and 'SELECT * FROM binary.'</p>
+<p>OffensiveCon 2026 (Berlin) - notably ran with zero AI-security talks
+(a negative signal worth tracking).</p>
+<p>Upcoming watch: Hexacon 2026 (Oct) opens with an 'AI for
+vulnerability research' keynote from Bruce Dang and Thai Duong
+(Calif.io), who used Anthropic's gated 'Mythos' model to build the first
+public macOS-kernel memory-corruption exploit on Apple's M5; Black Hat
+USA and DEF CON 34 (Aug) both have dedicated AI tracks; and USENIX
+Security 2026 has a cluster of LLM-agent security papers.</p>
+<p>Newsletter Roundup</p>
+<p>Venture in Security (Ross Haleliuk, 6/23): an essay arguing the most
+visible security voices on LinkedIn / podcasts are not representative of
+the practitioners actually running large security teams. No new
+companies flagged.</p>
+<p>Unsupervised Learning (Daniel Miessler, No. 533, 6/20): theme of 'the
+harness matters more than the model,' with a strong personal nod to
+Scanner.dev (security data lake; Sequoia Series A) and CyCognito (AI
+pentesting) - both adjacent / established, so not added as new
+entrants.</p>
+<p>AISecHub (Tal Eliyahu, May issue): a research / tools digest focused
+on prompt-injection-to-RCE in AI coding agents and MCP security; no
+funded-company highlights this cycle.</p>
+<p>Software Strategies Blog: the most recent cybersecurity post is April
+8 (the blog is not weekly); it surfaced AI-native vuln names Onit
+Security and ZAST.AI (both added) and Jericho Security (added).</p>
+<p>Helmet Watch</p>
+<p>No Helmet Security (helmet.sh) news in-window - no new funding,
+hires, product launches or press. The latest remains the December 2025
+$9M seed (SYN Ventures, WhiteRabbit Ventures); its MCP-layer
+agent-communications security positioning is unchanged.</p>
+<p>Index hygiene</p>
+<p>Companies tab now holds 195 entries (up from 174). Funding Rounds
+109, Exits &amp; M&amp;A 40, Themes 35, Startup Ideas 37, People &amp;
+Thought Leaders 62, AI Security Tools &amp; Projects 29, Sources 180.
+Five new themes and three new ideas were added. Next annual sweep is due
+~2027-06; next quarterly deep dive ~2026-08-16.</p>
 <p>Weekly Update — Week of 2026-06-19</p>
 <p>Normal weekly run (7-day window, 2026-06-12 to 2026-06-19; attempt
 1). A heavy week for AI-security capital: three stealth emergences (Ent,
@@ -3064,6 +3260,7 @@ expect a 30-40% services line for the first three years.</p>
 <p>Companies tab now has 110 entries (up from 90). Funding Rounds: 36
 entries. Exits &amp; M&amp;A: 18 entries. Startup Ideas: 17. Sources:
 20.</p>
+<footer class="app-footer"><span class="credits">Built by <a href="https://ca.linkedin.com/in/zubairashraf" target="_blank" rel="me noopener">Zubair Ashraf</a><a href="https://ca.linkedin.com/in/zubairashraf" target="_blank" rel="me noopener" aria-label="Zubair Ashraf on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"></path></svg></a><a href="https://x.com/zashraf1337" target="_blank" rel="me noopener" aria-label="@zashraf1337 on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a><a href="https://crlab.ca/" target="_blank" rel="me noopener" aria-label="crlab.ca"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.93 6h-2.95a15.7 15.7 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8zM12 4c.83 1.2 1.48 2.53 1.91 4h-3.82c.43-1.47 1.08-2.8 1.91-4zM4.26 14a7.96 7.96 0 0 1 0-4h3.38a16.5 16.5 0 0 0 0 4H4.26zm.81 2h2.95c.32 1.25.78 2.45 1.38 3.56A8.03 8.03 0 0 1 5.07 16zm2.95-8H5.07a8.03 8.03 0 0 1 4.33-3.56A15.7 15.7 0 0 0 8.02 8zM12 20c-.83-1.2-1.48-2.53-1.91-4h3.82A13.6 13.6 0 0 1 12 20zm2.34-6H9.66a14.4 14.4 0 0 1 0-4h4.68a14.4 14.4 0 0 1 0 4zm.27 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14a16.5 16.5 0 0 0 0-4h3.38a7.96 7.96 0 0 1 0 4h-3.38z"></path></svg></a></span></footer>
 <footer id="zashraf-byline" style="text-align:center;padding:20px 16px;margin-top:28px;border-top:1px solid rgba(128,128,128,0.25);font:13px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#8b949e;"><span style="display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;">Built by <a href="https://ca.linkedin.com/in/zubairashraf" target="_blank" rel="me noopener" style="display:inline-flex;align-items:center;color:inherit;text-decoration:none;font-weight:600;">Zubair Ashraf</a><a href="https://ca.linkedin.com/in/zubairashraf" target="_blank" rel="me noopener" aria-label="Zubair Ashraf on LinkedIn" style="display:inline-flex;align-items:center;color:inherit;text-decoration:none;"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a><a href="https://x.com/zashraf1337" target="_blank" rel="me noopener" aria-label="@zashraf1337 on X" style="display:inline-flex;align-items:center;color:inherit;text-decoration:none;"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://crlab.ca" target="_blank" rel="me noopener" aria-label="crlab.ca" style="display:inline-flex;align-items:center;color:inherit;text-decoration:none;"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 2010 10 0 0 0 0-20zm6.93 6h-2.95a15.7 15.7 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8zM12 4c.83 1.2 1.48 2.53 1.91 4h-3.82c.43-1.47 1.08-2.8 1.91-4zM4.26 14a7.96 7.96 0 0 1 0-4h3.38a16.5 16.5 0 0 0 0 4H4.26zm.81 2h2.95c.32 1.25.78 2.45 1.38 3.56A8.03 8.03 0 0 1 5.07 16zm2.95-8H5.07a8.03 8.03 0 0 1 4.33-3.56A15.7 15.7 0 0 0 8.02 8zM12 20c-.83-1.2-1.48-2.53-1.91-4h3.82A13.6 13.6 0 0 1 12 20zm2.34-6H9.66a14.4 14.4 0 0 1 0-4h4.68a14.4 14.4 0 0 1 0 4zm.27 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14a16.5 16.5 0 0 0 0-4h3.38a7.96 7.96 0 0 1 0 4h-3.38z"/></svg></a></span></footer>
 </body>
 </html>
