@@ -1735,6 +1735,151 @@ with IR firms and MSSPs for distribution.</p>
 runtime that reasons about agent plans, tool calls, and data lineage,
 with simulation, a 'deny-explain' UX, and auditing built in.</p>
 <p><strong>10. Update cadence</strong></p>
+<p>Weekly Update — Week of 2026-07-03</p>
+<p>Normal 7-day weekly run (window 2026-06-26 to 2026-07-03, attempt 1).
+A quiet week immediately after the 2026-06-26 annual-sweep combo, so
+deal flow was thin and the emphasis this run is on catch-up entrants
+that predated the sweep, in-window product launches, and stub
+remediation. This was not a quarterly deep dive (the last, 2026-05-18,
+is 46 days old) and not an annual sweep (the last was 2026-06-26).</p>
+<p>Funding Activity</p>
+<p>No brand-new in-window AI+security funding rounds surfaced — expected
+for the week following a large sweep.</p>
+<p>2026-03-10 — Quantro Security: $2.5M seed (Gradient, Google's
+early-stage AI fund) at a ~$25M valuation for autonomous vulnerability
+management. Catch-up (pre-sweep, previously untracked).</p>
+<p>2026-05-15 — Hacktron: $2.9M pre-seed for AI-driven continuous
+penetration testing that tests every code change like an attacker.
+Catch-up (previously untracked).</p>
+<p>Exits &amp; M&amp;A</p>
+<p>No new in-window AI+security exits, M&amp;A or acqui-hires.</p>
+<p>Big-tech / frontier-lab talent watch (Step Z): the week's major lab
+moves were general-AI, not AI-security. Anthropic's ~$400M all-stock
+acqui-hire of Coefficient Bio is computational biology, and OpenAI's
+hire of policy adviser Dean Ball (Head of Strategic Futures, starting
+7/6) is AI-policy — neither is a security-startup acqui-hire, so nothing
+was logged in Exits &amp; M&amp;A.</p>
+<p>New Entrants</p>
+<p>Quantro Security (New York; founded 2025 by CrowdStrike / Tenable /
+Qualys veterans) — emerged from stealth 3/10/26 with $2.5M seed from
+Gradient at a ~$25M valuation. Its VM.Analyst agent ingests CMDB, cloud,
+firewall and VM data, then reasons over an org's real compensating
+controls to rank which vulnerabilities are genuinely exploitable, with
+natural-language task delegation. Catch-up.</p>
+<p>Hacktron (San Francisco; competitive-hacker founders with Cambridge
+ties) — $2.9M pre-seed; AI that tests every code change like a real
+attacker, with disclosed testing for Perplexity and Supabase.
+Catch-up.</p>
+<p>Netzilo (Campbell, CA; CEO Egemen Tas, ex-Comodo / Xcitium CTO) —
+in-window: on 7/1 expanded its 'AI control plane for the agentic
+workforce,' adding runtime governance (AIDR) across Amazon Bedrock
+AgentCore, Microsoft Foundry, Copilot Studio, CrewAI, LangGraph and
+Vertex AI, and open-sourced its AIDR Sigma detection rules.</p>
+<p>Tracked-Startup Updates</p>
+<p>Exaforce (#117): refreshed — added USP and under-the-hood detail
+(real-time security knowledge graph + autonomous 'Exabot' agents
+orchestrating LLM reasoning; platform + MDR). The $125M Series B at
+$725M val / $200M total was already on file. Flagged the pre-existing
+duplicate row #12 (old Seed stub) for later reconciliation.</p>
+<p>Surf AI (#134): stub remediated — Tel Aviv (founded 9/2024); founders
+Yair Grindlinger (CEO), Elad Horn, Roie Cohen Duwek, Avner Gideoni,
+Brenton Gumucio; $57M led by Accel (Cyberstarts, Boldstart);
+context-graph agentic security ops.</p>
+<p>Gambit Security (#137): stub remediated — founders Alon Gromakov
+(CEO), Sa'ar Elias (CPO), May Kogan (CTO), Unit 8200 vets ex-Sentra;
+$61M ($5M seed + $56M Series A; Spark Capital, Kleiner Perkins,
+Cyberstarts); AI-native cyber-resilience.</p>
+<p>Onyx Security (#105): stub remediated — founders Maxim Bar Kogan and
+Gil Elbaz; $40M ($5M seed 2024 + $35M Series A led by Conviction;
+Cyberstarts); secure AI control plane for agent governance; Tel Aviv +
+NY.</p>
+<p>Novee (#107): stub remediated — founders Ido Geffen (CEO), Gon
+Chalamish (CPO), Omer Ninburg (CTO), IDF elite cyber vets; Tel Aviv;
+$51.5M ($8.5M seed + $33M Series A + $10M venture debt; YL Ventures,
+Canaan, Oren Zeev); 'proprietary AI hacker' for continuous offensive
+testing.</p>
+<p>Complyance (#155): stub remediated — founder/CEO Richa Kaul; $20M
+Series A led by GV (Google Ventures); ~$28M total; agentic AI GRC
+deploying 30+ specialized compliance agents (HIPAA/ISO/NIST).</p>
+<p>Theme Signals</p>
+<p>AIDR (AI Detection &amp; Response) is emerging as a named
+runtime-agent-security pattern, now with an open detection-rule
+ecosystem: Netzilo open-sourced Sigma-style AIDR rules
+(github.com/netzilo/aidr-sigma) modeling multi-stage agent behavior
+(tool calls, file reads, skill acquisition) to catch prompt injection,
+tool poisoning and staged exfiltration — the 'Sigma for agents' idea
+moving from concept to code.</p>
+<p>Shadow-AI discovery / governance is productizing down to the endpoint
+and browser. In-window GA launches from incumbents: Jamf AI Governance
+(discover/enforce/report on AI tools on Mac) and iboss's free AI
+Security Platform (real-time visibility into ChatGPT, Copilot, Gemini,
+Claude, Perplexity, Cursor). The category is commoditizing fast,
+squeezing pure-play shadow-AI startups.</p>
+<p>Autonomous offensive security keeps drawing marquee capital and
+founders (A Security, Novee, Hacktron, XBOW, Dreadnode) — 'AI hacker'
+continuous-pentest positioning is now a crowded lane.</p>
+<p>Failures &amp; Pivots</p>
+<p>No AI+security startup shutdowns, layoffs or pivots identified
+in-window.</p>
+<p>New Venture Ideas</p>
+<p>Idea #38 — Vendor-neutral AIDR rule exchange + managed detection.
+Netzilo open-sourcing AIDR Sigma rules echoes the early Snort/Sigma
+moment; build the neutral registry + curation + managed-detection layer
+for agent-runtime behavior across every harness (Bedrock AgentCore,
+Foundry, LangGraph, CrewAI, Vertex), monetizing content and response
+rather than a single agent.</p>
+<p>Idea #39 — Cross-platform shadow-AI governance for the regulated
+mid-market. As Jamf (Mac) and iboss (network) commoditize discovery, a
+unified control plane spanning endpoint + browser + network + SaaS with
+audit-ready evidence mapped to HIPAA/ISO/NIST could win the
+compliance-driven buyer the point tools fragment.</p>
+<p>People &amp; Thought Leaders</p>
+<p>New entry: Egemen Tas (Netzilo, CEO/founder; ex-Comodo / Xcitium CTO)
+— building the AIDR / agentic-workforce control plane.</p>
+<p>People → company tripwire (Step P): no further unlisted anchor-name
+ventures surfaced in-window; the week's frontier-lab moves (Coefficient
+Bio → Anthropic; Dean Ball → OpenAI) are biotech and policy, not
+AI-security founders.</p>
+<p>Tools &amp; Open-Source Releases</p>
+<p>Netzilo AIDR Sigma rules (github.com/netzilo/aidr-sigma, ~7/1/26):
+community-released AI Detection &amp; Response rules encoding
+multi-stage agent-behavior signatures (prompt injection, indirect
+injection, tool poisoning, capability hijacking, privilege escalation,
+staged exfiltration) for Bedrock AgentCore, Foundry, Copilot Studio,
+CrewAI, LangGraph and Vertex.</p>
+<p>No in-window RE / vuln-research tool drops — RECon (6/19-21) was
+covered last run, and DEF CON 34 and Black Hat USA land in early
+August.</p>
+<p>Conference Highlights</p>
+<p>No major security conference fell in the 6/26-7/3 window. Watch list:
+Black Hat USA and DEF CON 34 (Las Vegas, early-mid August) and Hexacon
+2026 (Paris/Oct, opening with an 'AI for vulnerability research'
+keynote).</p>
+<p>Newsletter Roundup</p>
+<p>Venture in Security (Ross Haleliuk): recent programming centered on
+'build vs. buy' for AI security stacks and AI-powered credential
+security; post-RSAC, Haleliuk stresses practitioners' real worries are
+shadow AI and attackers using AI for recon at scale against identity /
+vuln-management gaps — no new funded-company names to capture.</p>
+<p>Help Net Security 'new infosec products' (7/3): featured Netzilo
+(AIDR runtime governance), Jamf AI Governance and iboss's free AI
+Security Platform — all captured above.</p>
+<p>Unsupervised Learning / AISecHub / Software Strategies Blog: no new
+in-window issues surfacing untracked funded companies since the 6-26
+run.</p>
+<p>Helmet Watch</p>
+<p>No Helmet Security (helmet.sh) news in-window — no new funding,
+hires, product launches or press. The latest remains the December 2025
+$9M seed (SYN Ventures, WhiteRabbit) for MCP-connection security.</p>
+<p>Index hygiene</p>
+<p>Companies tab now holds 198 entries (up from 195): added Quantro
+Security (#196), Hacktron (#197) and Netzilo (#198). Five stubs
+remediated in place (Surf AI, Gambit Security, Onyx Security, Novee,
+Complyance) and Exaforce #117 refreshed. Funding Rounds 111 (+2), Exits
+&amp; M&amp;A unchanged at 40, Themes 37 (+2), Startup Ideas 39 (+2:
+#38, #39), People 63 (+1: Egemen Tas), AI Security Tools &amp; Projects
+30 (+1: Netzilo AIDR Sigma), Sources 193 (+13). Pre-existing Exaforce
+#12/#117 duplicate flagged for reconciliation.</p>
 <p>Weekly Update — Week of 2026-06-26 (Annual Historical Sweep)</p>
 <p>Combined run: the normal 7-day weekly window (2026-06-19 to
 2026-06-26, attempt 1) plus the first Annual Historical Sweep - no prior
