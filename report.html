@@ -1735,6 +1735,153 @@ with IR firms and MSSPs for distribution.</p>
 runtime that reasons about agent plans, tool calls, and data lineage,
 with simulation, a 'deny-explain' UX, and auditing built in.</p>
 <p><strong>10. Update cadence</strong></p>
+<p>Weekly Update — Week of 2026-07-27</p>
+<p>Normal 7-day weekly run (window 2026-07-24 to 2026-07-31, attempt 1).
+Not a quarterly deep dive (the last, 2026-05-18, is 74 days old — next
+due ~2026-08-16) and not an annual sweep (the last was 2026-06-26). A
+concentrated week for AI-era identity and access: two acquisitions
+(Okta→Permiso, Cyera→Oasis) and Onyx's $113M Series B all pointed at
+controlling what autonomous agents can access and do. Two new companies
+were added (#228 Act Security, #229 SOCNova) and three stubs remediated
+(Runlayer, Opal, ZeroDrift).</p>
+<p>Funding Activity</p>
+<p>2026-07-29 — Onyx Security [tracked]: $113M Series B led by Bessemer
+at a ~$640M valuation, roughly four months after emerging from stealth;
+total funding now $153M and revenue reportedly quadrupled since launch.
+Founded by Maxim Bar Kogan (ex-Unit 8200, ex-Mixtiles) and Gil Elbaz
+(ex-NVIDIA AI architect, ex-IAF). Its secure AI control plane uses
+proprietary models to monitor each step of an agent's reasoning and
+correct unintended or malicious actions.</p>
+<p>2026-07-28 — Act Security: $60M total ($20M seed led by Team8 and
+Bessemer, then a $40M Series A led by Notable Capital) as it exited
+stealth — see New Entrants.</p>
+<p>Context: the July Israeli-founded surge continued. Calcalist framed
+the Oak/Neo/Glow trio (~$340M in eight days) as investors betting on a
+structural re-platforming of enterprise security around AI rather than a
+feature cycle.</p>
+<p>Exits &amp; M&amp;A</p>
+<p>2026-07-30 — Okta → Permiso Security (~$200M, nearly all-cash;
+expected close Q3 of Okta's FY27). Permiso (founded 2020 by ex-FireEye
+execs Paul Nguyen and Jason Martin; ~$28–29M raised) detects threats
+across human, non-human and agentic identities and in April 2026
+launched SandyClaw, a sandbox that analyzes AI-agent skills for
+malicious behavior before deployment. Okta is buying its way into
+agent-identity security.</p>
+<p>2026-07-28 — Cyera → Oasis Security (~$1B). Cyera, the AI-native
+data-security (DSPM) leader last valued at ~$12B, is folding in
+non-human/agent identity via Oasis (NHI discovery and lifecycle across
+cloud), extending its M&amp;A-led platform build-out. Both were already
+tracked; rows updated to acquisition-pending.</p>
+<p>No AI-security IPO or shutdown carried an in-window date.</p>
+<p>New Entrants</p>
+<p>Act Security (#228, Tel Aviv / US) exited stealth with $60M to sell
+'action-centric' cloud security. Founded in 2025 by the team behind
+Medigate — Jonathan Langer (CEO), Itay Kirshenbaum (CTO), Stephen
+Goldberg (CPO) and Ilai Fallach (Chief R&amp;D); Medigate was a ~$400M
+Claroty exit — it reframes cloud security around access rather than
+vulnerabilities, enforcing least-privilege boundaries for humans,
+workloads and AI agents and citing the Hugging Face agent-permission
+breach as the archetypal risk. It pitches itself as 'killing the patch
+problem.' Whether it trains its own model is not disclosed; the moat is
+an access-surface graph plus an action-centric policy engine.</p>
+<p>SOCNova (#229, Bolu, Turkey) surfaced via Richard Stiennon's 'New AI
+Security Vendors to Watch in 2026' (IT-Harvest, 7/27) — an AI-SOC
+platform that can run fully on-premise, a data-sovereignty angle for
+non-US buyers. Thinly sourced and flagged as a stub for follow-up; a
+geographic-diversification catch (IT-Harvest now tracks 537 AI-security
+vendors, up 19).</p>
+<p>Tracked-Startup Updates</p>
+<p>Onyx Security (#105) moved Seed → Series B on its $113M Bessemer
+round at ~$640M (total $153M); see Funding Activity.</p>
+<p>Oasis Security (#57) and Permiso Security (#65) were both marked
+acquisition-pending, with USP and under-the-hood fields filled; see
+Exits &amp; M&amp;A. Cyera (#47) was updated to note the Oasis
+acquisition.</p>
+<p>Stub remediation (3): Runlayer (#175) founders filled (Vitor Balocco,
+Tal Peretz, Andrew Berman); Opal Security (#178) founders filled
+(Umaimah Khan, Stephen Cobbe); ZeroDrift (#179) founders filled (Kumesh
+Aroomoogan, ex-Accern founder) and a $2M a16z-speedrun pre-seed added
+(total ~$12M).</p>
+<p>Theme Signals</p>
+<p>Agent access and identity are consolidating into the AI-era control
+plane. Two acquisitions in three days (Okta→Permiso, Cyera→Oasis) plus
+Onyx's $113M and Act's $60M all target the same question — what can an
+autonomous agent access, and who can stop it. Identity incumbents and
+AI-native data-security leaders are buying rather than building.</p>
+<p>'Access, not vulnerabilities' as the wedge. Act Security's framing —
+that access, exploitable at machine speed once agents inherit
+permissions, is the primary attack surface — echoes the Hugging Face
+breach and the broader non-human-identity thesis.</p>
+<p>Incumbents are entering agentic security in force. Microsoft unveiled
+the agentic 'Project Perception' platform (7/27, using Microsoft, OpenAI
+and Anthropic models); Snowflake announced a Cortex AI Gateway with MCP
+governance, agent-identity controls and exfiltration prevention at Black
+Hat; Axonius shipped an AI Agent and MCP Server (7/21). Specialists
+increasingly compete against native platform features.</p>
+<p>Failures &amp; Pivots</p>
+<p>No in-window AI-security shutdown or layoff. Broad July tech layoffs
+(Intel data-center group, Samsung, Magic Leap, Microsoft gaming) were
+unrelated to AI-security pure-plays.</p>
+<p>New Venture Ideas</p>
+<p>Three ideas were added to the pursue list, indexed 49–51 in the
+tracker.</p>
+<p>49. JIT ephemeral-credential broker for AI agents. Issue per-action,
+time-boxed scopes tied to an agent's reasoning-intent rather than a
+static identity, closing the over-broad-permission gap that Act, Onyx
+and Okta/Permiso are all circling. Early customers: platform and
+security-engineering teams running many production agents.</p>
+<p>50. MCP tool-poisoning CVE feed + auto-remediation. A dedicated
+vuln-intel and hardening pipeline for the 99-plus MCP CVEs (~60% command
+injection), riding the emerging OWASP MCP Top 10, with detection
+signatures and one-click config hardening for gateway vendors and agent
+platforms.</p>
+<p>51. Vendor-neutral agent reasoning-trace forensics. A portable,
+tamper-evident record/replay of an agent's reasoning and tool-call chain
+for incident response, standardized across frameworks (mediator-signed
+receipts) — the neutral audit layer Onyx-style correction engines don't
+provide.</p>
+<p>People &amp; Thought Leaders</p>
+<p>Two founders were added: Jonathan Langer (Act Security; serial
+founder, ex-Medigate/Claroty) and Nicholas Warner (Neo Security;
+ex-President and COO of SentinelOne). Notes were refreshed for Simon
+Willison (continuing to popularize the 'lethal trifecta' — private-data
+access plus untrusted content plus an exfiltration vector — as the core
+agent failure mode) and Johann Rehberger (ongoing prompt-injection
+research showing coding agents Devin and Google Jules, and Gemini,
+largely defenseless).</p>
+<p>Tools &amp; Open-Source Releases</p>
+<p>Added awesome-ai-agent-attacks
+(github.com/webpro255/awesome-ai-agent-attacks), a curated, sourced and
+dated timeline of real AI-agent security incidents (2024–2026). Multiple
+open-source MCP/agent 'firewall' projects were also updated in-window —
+scanning MCP, A2A and WebSocket traffic for exfiltration, SSRF and
+prompt injection, some emitting mediator-signed action receipts — a sign
+the agent-egress-control pattern is becoming a commodity building
+block.</p>
+<p>Conference Highlights</p>
+<p>Black Hat USA 2026 (Aug 1–6) and DEF CON 34 (Aug 6–9, themed
+'Agency,' a deliberate nod to agentic AI) sit just past the window.
+Pre-event announcements include the Black Hat AI Summit (Aug 4), 80-plus
+Arsenal tool demos, Dreadnode's cross-venue 'own your autonomous
+security stack' research and platform release, and Snowflake's
+pre-announced Cortex AI Gateway.</p>
+<p>Newsletter Roundup</p>
+<p>Venture in Security (Ross Haleliuk): continues probing whether
+AI-security follows the adoption path of prior security categories and
+what heavily funded, pre-revenue AI-security startups are really
+building.</p>
+<p>Software Strategies Blog: reinforces that the agentic-AI thesis is
+landing hardest in vulnerability management, and that AI-era access and
+identity are now drawing premium M&amp;A.</p>
+<p>AISecHub (Tal Eliyahu) and Unsupervised Learning (Daniel Miessler):
+continued coverage of agent-workflow trust, prompt-injection hunting and
+AI attack harnesses. (Latest full issues were not deep-fetched this
+run.)</p>
+<p>Helmet Watch</p>
+<p>No Helmet Security news this week. Public coverage remains its
+December 2025 emergence with a $9M seed (SYN Ventures, WhiteRabbit) to
+secure agentic-AI / MCP communications; founders Fred Kneip and Kaushik
+Shanadi.</p>
 <p>Weekly Update — Week of 2026-07-20</p>
 <p>Normal 7-day weekly run (window 2026-07-17 to 2026-07-26). An
 unusually heavy funding week, concentrated in AI-native control layers,
