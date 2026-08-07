@@ -1735,6 +1735,197 @@ with IR firms and MSSPs for distribution.</p>
 runtime that reasons about agent plans, tool calls, and data lineage,
 with simulation, a 'deny-explain' UX, and auditing built in.</p>
 <p><strong>10. Update cadence</strong></p>
+<p>Weekly Update — Week of 2026-08-03</p>
+<p>This was the Black Hat USA 2026 (Aug 3–6) and DEF CON 34 (Aug 6–9)
+week — the densest conference window of the year — and it dominated the
+signal. The throughline everywhere was “agentic”: defenders shipping
+bounded-autonomy SOCs and pre-action agent runtime governance, and
+offensive AI moving from demo to product. Two large AI-agent-security
+rounds landed the same week (Obsidian $85M at a $1.1B unicorn valuation;
+Zenity $125M Series C), and Visa agreed to buy behavioral-fraud-AI firm
+BioCatch for $2.4B. We added three companies, remediated six aged stubs,
+and refreshed six tracked startups.</p>
+<p>Funding Activity</p>
+<p>2026-08-04 — Obsidian Security: $85M Series D at a $1.1B valuation
+(unicorn), led by Crescent Cove Advisors, with Greylock and Menlo
+(existing) participating; total funding now exceeds $200M. Obsidian has
+pivoted from SaaS security posture into AI agent runtime governance —
+detecting and blocking privilege escalation, excessive data access and
+policy violations before an agent action executes, aligned to OWASP risk
+criteria — and reports 60 of the Fortune 500 as customers. Added as
+company #230.</p>
+<p>2026-08-03 — Zenity: $125M Series C led by Norwest, with SoftBank
+Vision Fund 2, Qumra, Hitachi Ventures and LG Technology Ventures new,
+and Vertex, Third Point, DTCP and Intel Capital (existing) following.
+Total funding is now ~$185M; post-money was undisclosed. Gartner earlier
+named Zenity “the company to beat in AI agent governance.” Row refreshed
+in place.</p>
+<p>Context: Crunchbase's weekly ranking again put security and AI at the
+top, with Zenity among the largest raises of the week and AI claiming
+five of the ten biggest rounds overall.</p>
+<p>Exits &amp; M&amp;A</p>
+<p>2026-08-03 — Visa → BioCatch (~$2.4B, all-cash, from Permira-advised
+funds and others). BioCatch runs behavioral-first, multi-signal fraud AI
+across roughly 760M users and 350+ banks in 21 countries; the deal is
+Visa's bet on AI-powered fraud defense as scams scale. Expected to close
+in Visa's fiscal Q2 2027. Logged as an exit.</p>
+<p>Also notable but adjacent (non-AI-core, not logged as an AI exit):
+Bank of America agreed to acquire UK offensive-security firm MDSec to
+build out internal red-teaming.</p>
+<p>New Entrants</p>
+<p>Obsidian Security (#230) — see Funding Activity. A coverage-gap
+catch: an established (2017, ex-Cylance) SaaS-security company that had
+quietly repositioned around AI agent runtime governance without being on
+the tracker.</p>
+<p>Stairwell (#231) — an AI-SOC founded by Mike Wiacek (founder of
+Google's Threat Analysis Group; former Chronicle CSO), with ~$69.5M from
+Sequoia, Accel and S32. It launched Backstory, an agentic investigation
+platform that maps a malware incident's full blast radius — variants,
+affected systems and containment scope — in seconds. Another established
+pure-play that had been missed.</p>
+<p>Artiphishell / Shellphish Support Syndicate (#232) — DARPA-backed
+autonomous VulnOps, commercializing Shellphish's ARTIPHISHELL Cyber
+Reasoning System from the DARPA AI Cyber Challenge (AIxCC). It launched
+Verifiable Remediation, which proves a flagged vulnerability is real and
+exploitable before fixing it and then proves the fix holds. Led by ASU
+professor Adam Doupé — precisely the academic-founder profile our
+coverage safeguards target.</p>
+<p>Tracked-Startup Updates</p>
+<p>Black Hat product launches drove most refreshes. Cyera launched Agent
+Guardian and Cyera Endpoint (discovery, access governance and runtime
+controls for enterprise AI agents across cloud and endpoint). Prophet
+Security released AI Detection Engineer on its Agentic AI SOC Platform
+(auto-authoring and tuning detections from past investigations).
+Horizon3.ai launched NodeZero WebApp Pentesting (production-safe
+autonomous web-app attack-path testing). Sweet Security's Agentic AI
+Blocking reached general availability (terminate rogue agent tool
+calls/sessions, stop exfiltration, block prompt injection in live
+production). Novee expanded its AI pentest platform to mobile apps — an
+industry-first continuous mobile + web + API offering — and its row was
+updated with the $51.5M raise.</p>
+<p>Stub remediation (6): filled founders, HQ, funding and product depth
+for NanoCo (NanoClaw sandboxed agent harness; $12M seed led by Valley
+Capital Partners, with Docker, Vercel, Slow Ventures and Clem Delangue),
+Secludy (privacy-guaranteed synthetic data for GenAI; $4M seed), Fencio
+(in-execution-path agent control plane; Bharadwaj/Roy), Onit Security
+(agentic exposure management; $11M seed led by Hetz), ZAST.AI
+(PoC-validating AI vuln-research agent; $6M Pre-A led by Hillhouse; 119
+CVEs in H2 2025), and Netzilo (“AI Edge” / AIDR control plane for the
+agentic workforce; founder Egemen Tas).</p>
+<p>Theme Signals</p>
+<p>Governed autonomous SOC. The Black Hat throughline was bounded
+autonomy — SOCs that investigate and act within human-set, reversible,
+audited limits (SentinelOne's governed closed-loop Purple AI, Arctic
+Wolf Aurora, Prophet, Stairwell, ServiceNow, Tanium). The differentiator
+has shifted from the model to the guardrail layer.</p>
+<p>Agent runtime governance &amp; least-agency enforcement — the
+fastest-consolidating category. Inline control planes now enforce
+OWASP's “least agency” principle before an agent acts: Obsidian, Zenity,
+Cyera Agent Guardian, Varonis Agent Intent-Based Access Control, Zero
+Networks Least Agency Enforcement, KnowBe4 Agent Risk Manager (now
+covering Anthropic's Claude), Netzilo, Fencio and Helmet all sit
+here.</p>
+<p>Autonomous offense goes mainstream. DEF CON 34's theme was literally
+“Agency,” and the AI Village debuted HALctf, the first
+autonomous-pentest capture-the-flag. Vendors shipped continuous AI
+pentest and agent red-teaming (Novee, Snyk Evo Continuous Offensive
+Security, Horizon3 NodeZero WebApp), and frontier models were shown
+exploiting real systems (SecurityWeek reported Meta AI hacked external
+systems during testing; zero-click AI-browser hijacks hit Claude and
+ChatGPT Atlas).</p>
+<p>The AI-patch reliability gap — a useful counter-signal. 1Password
+research found roughly three in four AI-generated vulnerability patches
+leave something broken, fueling demand for verification and
+proof-carrying fixes (Artiphishell's Verifiable Remediation, Miggo's
+defense-in-depth mitigation). OWASP also released its 2026 LLM Top 10,
+keeping prompt injection at #1.</p>
+<p>Failures &amp; Pivots</p>
+<p>No AI-security startup shutdowns, layoffs or down-rounds surfaced in
+the window. The distress-adjacent signal remains talent concentration
+rather than failure: the AI-lab talent war continued (Axios, Aug 3),
+with Meta, OpenAI and Anthropic pulling researchers — including
+AI-security methodology talent — a dynamic that keeps surfacing
+under-the-radar teams and, occasionally, acqui-hire exits.</p>
+<p>New Venture Ideas</p>
+<p>Three ideas added this week (indexed 52–54), all grounded in the
+week's evidence.</p>
+<p>52. AI-patch verification layer (“prove the fix holds”). Wedge: AI
+coding and remediation agents flood repositories with patches, but ~75%
+of AI-generated vuln fixes leave something broken, so teams can't trust
+auto-fixes. An independent exploit-replay + regression harness sits
+between auto-fix and merge, proving each fix resolves the issue without
+regressions. Why now: autonomous remediation is shipping (Artiphishell,
+Miggo) while frontier models write exploits in hours.</p>
+<p>53. IoPC exchange — “VirusTotal for prompts.” Wedge: every agent/LLM
+vendor rolls its own prompt-injection detections and there is no shared
+indicator feed or common rule format. A network-effect registry of
+Indicators of Prompt Compromise with a NOVA-compatible rule format
+becomes the reputation layer for prompts and tools. Why now: prompt
+injection is #1 in the OWASP 2026 LLM Top 10, and NOVA/PromptIntel show
+demand.</p>
+<p>54. Continuous defensive agent attack-path graphing (“BloodHound for
+agents”). Wedge: enterprises running thousands of agents/MCP servers
+have no reachability view from untrusted input to sensitive action;
+governance tools enforce policy without an attack-path map. A continuous
+capability graph over the live agent/MCP fabric, with control
+simulation, feeds runtime enforcement. Why now: agent sprawl (“1 billion
+agents”) and PwnGraph proving the technique offensively.</p>
+<p>People &amp; Thought Leaders</p>
+<p>Mike Wiacek (added, #82) — founder of Google's Threat Analysis Group
+and former Chronicle CSO; now founder and CEO of Stairwell, where he
+launched Backstory.</p>
+<p>Adam Doupé (added, #83) — ASU professor and director of its Center
+for Cybersecurity &amp; Trusted Foundations; CEO of Artiphishell /
+Shellphish Support Syndicate. An academic AI-security founder
+commercializing an AIxCC cyber-reasoning system.</p>
+<p>Egemen Tas (updated) — confirmed as founder/CEO of Netzilo (“AI Edge”
+/ AIDR control plane); released community AIDR Sigma rules and an Amazon
+Bedrock AgentCore integration.</p>
+<p>Tools &amp; Open-Source Releases</p>
+<p>NOVA (nova-framework) — a YARA-inspired prompt pattern-matching
+engine that detects prompt injection, jailbreaks, data exfiltration and
+attacker TTPs by combining keyword rules, semantic similarity and LLM
+evaluation; it introduces “Indicators of Prompt Compromise” (IoPC) and a
+PromptIntel registry. Featured at Black Hat Arsenal 2026. Added as tool
+#50.</p>
+<p>PwnGraph — a runtime pentest framework that attaches to a live
+LangChain agent, hooks every tool call, and proves prompt-injection
+attack paths with canary tokens, rendering them as a typed capability
+graph. The offensive mirror of the runtime-governance products above.
+Added as tool #51.</p>
+<p>Also at the conference, XM Cyber open-sourced macOS (“FAInd my XPC”)
+and Oracle Cloud (“Offensive OCI”) exposure-hunting tools — general
+offensive tooling rather than AI-specific, noted but not tracked.</p>
+<p>Conference Highlights</p>
+<p>Black Hat USA 2026 and DEF CON 34 both fell in this window, and trade
+coverage summarized the mood as “security vendors go agentic.” Beyond
+the launches above: SentinelOne's Wayfinder now pairs Anthropic's latest
+models with human analysts to find and validate exploitable
+vulnerabilities; Cato, Cribl, Cycode, Flashpoint, Acalvio (deception
+guardrails for agents), Miggo, Legit Security (VibeGuard 2.0 for AI
+coding agents) and Filigran (agentic CTEM) all shipped agent-security
+features.</p>
+<p>DEF CON's “Agency” theme and the AI Village's HALctf competition
+formalized autonomous pentesting as a discipline; a 2501.ai demo showed
+a single agent going from a Shodan query to a prioritized target plan
+with no human input.</p>
+<p>Newsletter Roundup</p>
+<p>Venture in Security (Ross Haleliuk): the latest post (Jul 28) argues
+that not all cyber acquisitions are created equal and offers a framework
+for cutting through M&amp;A noise — apt given this week's Visa/BioCatch
+and BofA/MDSec deals. No new untracked companies were flagged.</p>
+<p>Unsupervised Learning (Daniel Miessler), AISecHub (Tal Eliyahu) and
+the Software Strategies Blog: scanned; recent issues track the same
+agentic-security and AI-SOC themes captured above, and no additional
+untracked names surfaced this run (their August issues sit behind
+client-rendered or paywalled archives, which limited extraction).</p>
+<p>Helmet Watch</p>
+<p>No Helmet Security news this week. The tracked profile remains
+current: $9M seed (Dec 2025, SYN Ventures + WhiteRabbit Ventures), CEO
+Fred Kneip, CTO Kaushik Shanadi; MCP runtime discovery, monitoring and
+enforcement. The week's agent-runtime-governance surge (Obsidian,
+Zenity, Cyera, Netzilo, Fencio) is squarely Helmet's competitive set —
+worth watching closely as the category consolidates.</p>
 <p>Weekly Update — Week of 2026-07-27</p>
 <p>Normal 7-day weekly run (window 2026-07-24 to 2026-07-31, attempt 1).
 Not a quarterly deep dive (the last, 2026-05-18, is 74 days old — next
