@@ -1735,6 +1735,547 @@ with IR firms and MSSPs for distribution.</p>
 runtime that reasons about agent plans, tool calls, and data lineage,
 with simulation, a 'deny-explain' UX, and auditing built in.</p>
 <p><strong>10. Update cadence</strong></p>
+<p>Quarterly Deep Dive — Week of 2026-08-17</p>
+<p>Quarterly deep dive, window 2026-04-23 to 2026-08-21 (120 days),
+attempt 1. The last deep dive was 2026-05-18, 95 days ago, so this run
+was due. The annual historical sweep last ran 2026-06-26 and is not due
+again until roughly June 2027. Coverage note up front: the session's
+web-search budget was exhausted partway through the sweep, which cost us
+the five geographic-outlet queries (Calcalist, Sifted, BetaKit, Inc42,
+KrAsia), the Gartner Cool Vendors and Forrester Wave aggregator lists,
+and the targeted stub-remediation searches. Those four gaps are carried
+into next week's run.</p>
+<p>The quarter's defining event is not a funding round. It is the shape
+of the Virtue AI outcome. Meta's Superintelligence Labs acqui-hired Dawn
+Song, Bo Li and Sanmi Koyejo in June; Fortinet then bought the company
+itself on August 17. Two acquirers, eight weeks apart, buying different
+halves of the same asset. The frontier lab wanted the researchers, the
+security incumbent wanted the product and the customer list, and neither
+seems to have wanted both. Academic-founded AI-security companies now
+have two buyer pools that value entirely different things about them,
+which is good for total consideration and genuinely confusing for anyone
+trying to answer whether a company has exited.</p>
+<p>Underneath that, the quarter had a single dominant structural story:
+non-human identity became the category incumbents decided to buy rather
+than build. Palo Alto completed CyberArk at $25B. Cisco completed Astrix
+at roughly $400M and moved on WideField. SailPoint took Entro at about
+$200M, Okta took Permiso at about $200M, 1Password took Apono at
+$250-300M, Zscaler moved on Symmetry at $175M, Keyfactor moved on
+Cofide, Snowflake moved on Natoma, and CrowdStrike shipped Continuous
+Identity for AI Agents off the back of SGNL. Nine deals of broadly
+similar capability inside four months. That is not a considered
+build-versus-buy analysis repeated nine times; that is nine strategy
+teams reaching the same conclusion at the same time and worrying about
+who gets left without one.</p>
+<p>Funding Activity</p>
+<p>Twenty-eight rounds added, of which twenty-four are new to the
+tracker and four are backfills of companies we were missing entirely.
+The market context: Crunchbase counts $855M across more than 150
+AI-security seed rounds so far in 2026, and twelve qualifying
+cybersecurity deals raised roughly $1.09B between July 15 and August 4
+alone. Seven of those twelve directly protect AI agents, AI-enabled
+applications or non-human identities.</p>
+<p>2026-08-03 — Horizon3.ai [tracked]: $250M Series E at more than $2B,
+co-led by NightDragon and NEA with seven new and five returning
+investors. Roughly a 3x valuation step from the $650M Series D about a
+year earlier. NodeZero has now run more than 170,000 autonomous
+pentests. The largest round the autonomous-offense category has
+produced.</p>
+<p>2026-06-29 — Straiker [tracked, CATCH-UP]: $64M Series A led by
+Marathon Management with Citi Ventures, Illuminate and Workday Ventures,
+bringing total to $85M. This is the round behind the $8M-to-$85M figure
+we reconciled on 2026-08-14 without knowing what caused the jump. CEO
+Ankur Shah won Security Executive of the Year at the 2026 SC Awards.</p>
+<p>2026-05-27 — RevEng.AI [new, #236]: $15M Series A, total roughly
+$19.5M. Small round, disproportionate significance. This is the first
+real commercial datapoint in AI-aided binary reverse engineering, a
+category this tracker has been flagging as thin for months. RevEng.AI
+trains its own model, BinNet, rather than wrapping a frontier LLM around
+decompiler output — an expensive architectural choice that also happens
+to be the right one, since decompiled binaries sit well outside any
+frontier model's training distribution.</p>
+<p>Jazz Security [new, #237]: $61M seed and Series A out of stealth,
+co-led by Glilot and Team8 with Ten Eleven, Merlin, Encoded and
+MassMutual Ventures. Unit 81 alumni rebuilding DLP from scratch around
+an agentic investigator rather than a rule engine. More than a dozen
+paying customers signed while still in stealth, including Lemonade,
+AlphaSense and CAVA, which is unusually hard evidence for a seed-stage
+claim. Exact announcement date was not disclosed in available coverage
+and is recorded as such.</p>
+<p>Guild.ai [new, #240]: $44M across a $14M seed and a $30M Series A
+closed within four months, GV leading. An out-of-path agent control
+plane — model routing, cryptographic per-agent identity, runtime circuit
+breakers, inference budgets, immutable audit. The compressed raise
+cadence is itself the signal.</p>
+<p>2026-07-29 — Mate Security [new, #242]: $35M Series A led by Canaan
+with Microsoft's M12, Insight and Team8, total above $50M. Worth noting
+that M12 is funding an agentic-SOC substrate while Microsoft ships Agent
+365 as a competing control plane.</p>
+<p>JetStream Security [new, #238]: $34M seed led by Redpoint with
+CrowdStrike's Falcon Fund. Angel list is Kurtz, Rappaport and Kerrest,
+which is about as strong a founder-CEO signal as a seed round can
+carry.</p>
+<p>2026-07-28 — Hush Security [new, #239]: $30M Series A led by Battery
+with YL Ventures, total roughly $41M, and Akamai in as a strategic
+investor. Note Akamai's pattern here: bought LayerX in May, invested in
+Hush in July.</p>
+<p>Other rounds added: DataBahn $40M (agentic security data pipeline,
+07-30), Aryon Security $29M Series A (06-10), Nebulock $25M (06-26),
+Prevalent AI $22M (08-19, previously bootstrapped), Bloom Security $20M
+seed (08-11, Glilot and Ten Eleven with Okta Ventures), Balance Theory
+$19M Series A (08-01, SYN Ventures), BAND $17M seed (Sierra, Hetz,
+Team8), Discern Security $13M Series A (07-30), White Circle $11M
+(05-12), Cantina $8M (07-30), Xpander $7.5M (08-18), Copperhelm $7M
+(04-24), Cytix £6M Series A (UK, Northern Gritstone), Dawnguard $6.3M
+(07-01), Herd Security $3M (05-06), Emphere $2.1M pre-seed (06-07), and
+TopHat Security's undisclosed Series A (08-20).</p>
+<p>Backfills: 7AI's $130M Series A at roughly $700M (March 2026,
+reported as the largest cybersecurity Series A on record), Sublime
+Security's $150M Series C (October 2025, total above $240M), RADICL's
+$31M Series A (February 2026), and Equixly's €10M Series A (December
+2025).</p>
+<p>Exits &amp; M&amp;A</p>
+<p>Ten exits added, and the quarter's exit density is the story.
+Consolidation, not failure, is how AI-security companies are leaving the
+board right now — we found no outright shutdowns in 120 days.</p>
+<p>2026-08-17 — Virtue AI acquired by Fortinet. Terms undisclosed;
+technology folding into FortiAIGate for model, application and
+agentic-system protection. This is the second exit for Virtue AI inside
+90 days and it settles a question the tracker left open in June: the
+Meta event was an acqui-hire of the research team, not a sale of the
+company. Carlos Guestrin, contrary to some reporting, did not go to Meta
+— he remains Director of the Stanford AI Lab and stayed on as Virtue
+AI's Chief Scientist. One coincidence worth noting without over-reading:
+Guestrin's endowed chair at Stanford is the Fortinet Founders
+Professorship.</p>
+<p>2026-05-21 — Symmetry Systems to Zscaler, reported $175M. Bought for
+its identity-to-data access graph, which answers 'what can this agent
+reach' rather than 'where is the sensitive data.' That reframing is
+exactly why an eight-year-old DSPM company suddenly had strategic
+value.</p>
+<p>2026-06-15 — TrojAI to A10 Networks. With Lakera going to Check Point
+and Prompt Security to SentinelOne, three of the most established
+independent AI red-teaming and runtime-protection vendors are now inside
+network and platform incumbents. The independent AI-guardrails market is
+thinner than it looks.</p>
+<p>2026-06 — Jit to Torq, reported around $70M. Torq bought the AI
+Context Graph, not the AppSec product. Context correlation is the scarce
+input for autonomous decision-making, and it is telling that an AI-SOC
+company paid eight figures for a graph rather than building one.</p>
+<p>2026-06 — Aiceberg to Cranium AI. Structurally the most interesting
+small deal of the quarter: an AI-security startup acquiring another
+AI-security startup. The governance segment has started consolidating
+internally rather than only being bought into from above.</p>
+<p>Also added: CardinalOps to Cribl (July, detection engineering into a
+data-pipeline company), Cofide to Keyfactor (July, intent, weeks after
+Keyfactor took a $1B+ growth investment framed around AI and
+post-quantum machine identity), SurePath AI to F5 at $50.1M (closed
+06-15, now the F5 AI Security Platform), Deepchecks to Check Point at a
+reported $10-20M (05-19), and Anetac to Quest (May).</p>
+<p>Check Point deserves a line of its own. Cyclops, Cyata, the Rotate
+acqui-hire, Deepchecks and Lakera — five AI-security-adjacent
+acquisitions in a single year, plus a stated plan for a Global Center of
+Excellence for AI Security. No other incumbent has been close to this
+acquisitive in the category.</p>
+<p>No AI-security IPOs priced in the window. The pipeline commentary
+still names Cohesity, Snyk and 1Password as pending candidates.</p>
+<p>New Entrants</p>
+<p>Forty-nine company rows added, #236 through #284 — the largest single
+addition since the annual sweep. Roughly half are genuinely new entrants
+from the window; the rest are backfills and acquired-company rows we
+needed for the exit records to make sense.</p>
+<p>The most consequential new names are covered under Funding Activity.
+Three deserve separate comment.</p>
+<p>BAND (#241) is the only company we found working on the space between
+agents rather than on any individual agent. Every other agent-security
+company in this tracker secures one agent at a time — identity for an
+agent, monitoring of an agent, a gateway in front of an agent.
+Delegation chains and confused-deputy problems live between agents, and
+nobody has a control point there. The obvious risk is that a
+coordination layer only provides security if agents actually route
+through it.</p>
+<p>Xpander (#253) takes the opposite approach to almost every commercial
+agent-security company: security through the execution substrate rather
+than through observation. Conceptually it is closer to the open-source
+sandboxing wave (Hazmat, forkd, KVM microVM runtimes) than to the
+monitoring-and-identity products that dominate the funded side of the
+category. Worth watching whether the commercial and open-source
+approaches to agent isolation converge or diverge.</p>
+<p>Prevalent AI (#252) raised $22M after bootstrapping, which is close
+to unique in this cohort. Almost every company in this tracker was
+venture-funded before it had customers. A bootstrapped path implies the
+product was commercially validated before capital arrived, and that is a
+different quality of evidence than a strong seed round.</p>
+<p>Backfills worth flagging as coverage failures on our part. 7AI (#259)
+has been one of the best-capitalised AI-SOC companies in the market for
+months — roughly $166M at a ~$700M valuation, founded by Cybereason's
+Lior Div, one of only six security companies on CB Insights' 2026 AI 100
+— and it had no tracker row. Sublime Security (#260) has raised more
+than $240M in AI-native email security. Doppel (#279) appears in nearly
+every 2026 deepfake and social-engineering roundup. RADICL (#262) has
+grown revenue more than 7x targeting the defense industrial base.
+Equixly (#261) is one of very few well-funded AI-offense companies in
+continental Europe. The common thread in these misses is that none of
+them raised a headline round inside a weekly window — they grew steadily
+and our weekly cadence is tuned to events, not to standing. The
+quarterly deep dive exists precisely to catch this class of miss, and it
+caught five.</p>
+<p>Tracked-Startup Updates</p>
+<p>Sixteen companies refreshed in place. Virtue AI, Straiker, Mindgard,
+Horizon3.ai, Runlayer and Ocean Security are covered elsewhere in this
+section.</p>
+<p>Cyera has quietly become an acquirer rather than only a target. It
+raised $600M on 2026-06-10 at a $12B valuation, taking total past $2B,
+then bought Genie Security for roughly $50M in May and Oasis Security
+for roughly $1B in July. The Oasis deal is the largest
+AI-security-buys-AI-security transaction this tracker has recorded, and
+it unifies DSPM with agentic access governance under one roof. Genie is
+worth noting separately for the timeline alone: founded and sold inside
+about five months.</p>
+<p>Torq is now valued at $1.2B with Fortune 500 logos including Carvana,
+Procter &amp; Gamble, Uber and Marriott, and has become an acquirer with
+the Jit deal. Cranium likewise, via Aiceberg. The pattern of well-funded
+AI-security companies buying smaller AI-security companies is new this
+quarter and worth tracking as its own signal.</p>
+<p>Ocean Security's round size was recorded incorrectly. We had $20M;
+the correct figure is $28M, seed and stealth exit announced 2026-05-21
+led by Lightspeed. Corrected in place.</p>
+<p>Armadin's row now records that George Kurtz joined the board in April
+2026, alongside fuller detail on the March launch: roughly $190M
+combined seed and Series A led by Accel with GV, Kleiner Perkins, Menlo,
+8VC, Ballistic and In-Q-Tel, and co-founders Travis Lanham, Evan Peña
+and David Slater beside Kevin Mandia. In-Q-Tel's presence in a seed
+round is not a common sight.</p>
+<p>Stub remediation did not run this week. Ten stub rows remain, nine of
+them missing only a Total Funding figure for companies where the number
+appears genuinely undisclosed, and several already confirmed as such in
+prior runs. The search budget ran out before the targeted queries could
+be issued. Carried to next run.</p>
+<p>Theme Signals</p>
+<p>Split exits are now a recognised structure. Virtue AI is the clean
+case, but Check Point's Rotate acqui-hire sitting alongside its Cyclops,
+Cyata and Deepchecks purchases points the same way. When a company's
+value is concentrated in three named researchers and a product they
+built, those two things can be sold separately, and in 2026 they
+increasingly are. The open question is whether Fortinet bought a
+differentiated asset or a customer list — Virtue AI's three most
+prominent technical minds had already left when the deal closed.</p>
+<p>Non-human identity is where incumbents stopped experimenting. Nine
+acquisitions in four months, plus Okta for AI Agents, Microsoft Agent
+365 and Cloudflare's Identity-Aware AI Gateway shipping natively.
+NHI-to-human ratios now exceed 80:1 in the average enterprise, and
+Microsoft's 2026 Secure Access Report found 97% of organisations had an
+identity incident in the past year with 70% originating in AI-related
+activity. For the remaining independents — Oak, NewCore, Token, Clutch,
+Hush, Keycard, Offroad — the realistic path is acquisition, and their
+pricing reflects it. For anyone starting here now, the competitive field
+is nine integrated platform products rather than a green field.</p>
+<p>The agent supply chain is the white space nobody owns. MCP
+accumulated more than 30 CVEs in the first two months of 2026 and the
+ClawHub incident found 824 of roughly 10,700 published agent skills to
+be malicious. The NSA published a dedicated CSI on MCP security and the
+Cloud Security Alliance published agentic MCP best practices, both
+recommending signed and attested server allowlists. Nobody has built the
+scanning and signing infrastructure that would make an allowlist
+practical at marketplace scale. This is the npm registry problem with a
+shorter fuse and no registry owner, and it is the clearest unclaimed
+position in the category.</p>
+<p>Open source is closing the gap to commercial products faster than it
+used to. More than thirty new AI-security tools shipped in the window,
+and they map almost one-to-one onto funded commercial categories: Hazmat
+and forkd against commercial agent sandboxing, Pipelock and Adrian
+against agent firewalls, Praxen against Arrakis-style behavioural
+verification, Lyrie and DarkMoon against autonomous pentest, OpenHack
+and Sandyaa against AI vulnerability research. Microsoft open-sourced
+Clarity and RAMPART; Trail of Bits open-sourced Buttercup and partnered
+with OpenAI on Patch the Planet. The diligence question this raises for
+any agent-security company is uncomfortable and worth asking directly:
+what here cannot be assembled from four GitHub repositories and a
+weekend? Companies whose value sits in a trained model or a proprietary
+dataset — RevEng.AI's BinNet, Jazz's context model — answer it far
+better than companies whose value sits in orchestration.</p>
+<p>Regulation became a forcing function on 2026-08-02, when the EU AI
+Act's transparency obligations became enforceable with fines up to €15M
+or 3% of global turnover. The Digital Omnibus, signed 2026-07-27, pushed
+high-risk conformity assessment out to December 2027, which removes
+near-term pressure from exactly the tier where the largest compliance
+budgets sit — AI GRC vendors that priced 2026 against the original
+deadline may miss. The more useful development for this tracker is the
+CISA and Five Eyes agentic AI guidance of 2026-05-01, which explicitly
+calls for cryptographically anchored, short-lived agent credentials.
+That single recommendation endorses the architecture underpinning all
+nine of the quarter's NHI acquisitions and hands the surviving
+independents a procurement argument they did not have in April.</p>
+<p>AI-aided reverse engineering graduated from research topic to
+fundable category, narrowly. RevEng.AI's $15M is the only meaningful
+commercial datapoint, with Binarly's VulHunt as the incumbent-side
+counterpart. Two architectures are competing on the same problem:
+RevEng.AI trains its own binary model, Binarly orchestrates frontier
+LLMs with MCP tool-calling and Claude Skills over its existing analysis
+engines. It is genuinely unclear which wins. RECon 2026 ran sessions on
+agentic reverse engineering and deobfuscation, and academic benchmarks
+appeared (CrackMeBench, REFORGE, ReCopilot) to formalise evaluation.
+Small market, high technical difficulty, unavoidably dual-use — but the
+difficulty is the moat, which is more than most categories in this
+tracker can say.</p>
+<p>Failures &amp; Pivots</p>
+<p>No AI-security startup shutdowns, wind-downs or down-rounds surfaced
+across the full 120 days. That is worth stating plainly because it is
+anomalous: a category with 285 tracked companies and this much capital
+should be producing failures. The absence most likely means acquisition
+is absorbing companies that would otherwise fail, which defers rather
+than removes the reckoning.</p>
+<p>Layoffs did occur, mostly at scale rather than at startups.
+CrowdStrike cut roughly 500 roles, about 5% of headcount. Pentera cut 60
+in a second round within four months. Google Cloud cut staff across its
+Threat Intelligence Group and Mandiant-linked cybersecurity roles even
+while Cloud revenue grew 63% year-over-year, which reads as AI-driven
+headcount reallocation rather than distress. Aggregated coverage also
+named Deep Instinct, Otorio, ActiveFence, SkyBox and Sophos as cutting
+staff in 2026; specific figures and dates were not independently
+confirmed this run.</p>
+<p>New Venture Ideas</p>
+<p>Three ideas added, indexed 58 through 60, each grounded in a specific
+gap observed above rather than in general category enthusiasm.</p>
+<p>58. Socket for Agents — a neutral MCP and agent-skill supply-chain
+trust registry. Wedge: 30+ MCP CVEs in two months and 824 malicious
+skills out of 10,700 on a single marketplace, against a field where
+every incumbent is building identity and access control and nobody is
+building provenance. Why now: MCP went vendor-neutral under the Linux
+Foundation in December 2025, guaranteeing an explosion of community
+servers with no central review, and both NSA and CSA guidance call for
+signed allowlists that no one can currently produce. Customers:
+enterprises standardising on agent marketplaces, the marketplace
+operators themselves as an embedded pre-publish API, and platform
+vendors needing a security layer for their own stores. Moat: a
+proprietary corpus of malicious-skill patterns from continuous
+cross-marketplace scanning plus pre-publish gating integrations — a data
+and distribution network effect rather than a scanner. Risk: a platform
+owner ships a competent free version as a gateway feature. Neutrality
+across marketplaces is the only defensible position and also the hardest
+to fund, because it means partnering with competitors.</p>
+<p>59. Agentic commerce fraud and spend-guardrail engine. Wedge:
+Cloudflare shipped Agent Wallet in August, letting agents hold
+verifiable identity and spend within human-set limits, and card-network
+agent rails are following. No fraud stack is built for agent-specific
+failure modes — one agent socially engineering another into
+overspending, prompt injection hijacking a spend-authorised agent
+mid-transaction, agent-to-agent collusion invisible to models trained on
+human behaviour. Why now: the infrastructure shipped this quarter and
+the fraud layer does not exist; the NHI incumbents are solving access
+governance, which is a different problem with a different buyer.
+Customers: fintechs and marketplaces enabling agent checkout, Cloudflare
+and Stripe ecosystem partners, enterprises piloting procurement agents
+with real spend authority. Moat: an anomaly model trained on
+agent-to-agent transaction graphs plus cryptographic spend enforcement
+at the wallet and rail level. Risk: timing. Agent payment volume may
+take 12-18 months to reach the scale where fraud economics justify a
+dedicated vendor.</p>
+<p>60. Real-time in-call deepfake interruption for high-value
+authorization. Wedge: deepfake defence spending is concentrated on KYC
+onboarding liveness and post-hoc detection, and nobody is intercepting a
+live executive-impersonation call during a wire transfer or credential
+reset, which is where the money actually leaves. Why now: deepfake use
+in biometric fraud attempts is up 58% year-over-year with injection
+attacks up 40%, average identity-fraud cost per incident has roughly
+doubled in two years to $450K, and the EU AI Act's deepfake-labelling
+mandate creates provenance tailwind nobody has extended to live
+intervention. Customers: corporate treasury and wire desks, commercial
+banking authorization lines, IT helpdesks handling password-reset
+verification. Moat: conferencing-platform integrations to inject
+cryptographic liveness challenges mid-call, plus a detection model tuned
+for authorization-call audio rather than KYC camera conditions. Risk:
+the hardest of the three technically. Real-time latency budgets are
+unforgiving and a false positive on a live executive call is expensive
+in a different currency.</p>
+<p>People &amp; Thought Leaders</p>
+<p>Twenty-one added and twenty-six existing entries updated — the
+largest people pass of any run, as a deep dive should produce.</p>
+<p>The most consequential addition is Lior Div (#90), 7AI's founder, who
+raised the largest cybersecurity Series A on record after building
+Cybereason to unicorn status and had no entry in this tab. Also added:
+Raj Rajamani of JetStream, Micha Rave of Hush, Ido Livneh of Jazz, James
+Everingham of Guild.ai, Asaf Wiener of Mate, Jason Rebholz of Evoke,
+Alex Matrosov of Binarly, Alessio Dalla Piazza of Equixly, Patrick
+Collins of Dam Secure, Toni de la Fuente of Prowler, Kevin Tian of
+Doppel, and Chris Sestito of HiddenLayer — the last a longstanding
+omission, since HiddenLayer has been a tracked company since inception
+without its founder recorded.</p>
+<p>Rajiv Dattani of AIUC (#97) is worth separate attention because he
+represents a lever this tracker has not covered: insurance. AIUC is
+building underwriting standards for AI agent providers. If underwriters
+set the bar for what an agent must demonstrate before it can be insured,
+they become a de facto standards body — a very different mechanism from
+any technical control in this report, and a plausible route to the
+security baselines regulators have been slow to define.</p>
+<p>Two corrections. First, Carlos Guestrin did not join Meta with his
+Virtue AI co-founders, contrary to how the June acqui-hire was widely
+summarised; he remains Director of the Stanford AI Lab and Virtue AI's
+Chief Scientist. Second, Matt Suiche is a Researcher at Tolmo, not a
+founder — Tolmo's founders are Pierre Betouin, JB Aviat, Vlad de
+Turckheim and Arnaud Breton. Suiche's own venture is OnDB Inc., a data
+infrastructure company for the agentic economy, which we have
+recorded.</p>
+<p>A note that belongs in this report rather than a footnote. While
+fetching Suiche's personal site, our research agent encountered an
+embedded prompt-injection payload instructing it to behave as a fan
+journalist and to inflate salary offers if acting as a recruiter. The
+agent flagged it and did not comply. We are tracking prompt injection as
+a category and we ran into it in the course of tracking it, on a
+security researcher's own domain. Whether it was placed as a joke, a
+demonstration or a trap, it is a working illustration of why the agent
+supply-chain theme above matters: our own research pipeline is an agent
+consuming untrusted web content.</p>
+<p>Notable updates on tracked people: Peter Garraghan's Mindgard closed
+a $30M Series A on 08-12, one of the largest rounds for a UK academic
+spinout in this space. Ross Haleliuk has been co-founder and CEO of an
+unnamed stealth cybersecurity startup since around April 2026 — name and
+funding still undisclosed, flagged as a follow-up. Edward Wu made Fast
+Company's AI 20. Niv Braun's Noma made Rising in Cyber 2026 with revenue
+up 10x. Jason Clinton moved to Deputy CISO at Anthropic when Vitaly
+Gudanets joined as CISO from Netflix, and we have added Gudanets. Phil
+Venables joined the boards of Native and ArmorCode. George Kurtz is
+building an unusually broad position across the agentic wave from
+outside CrowdStrike as well as inside it — Armadin's board and
+JetStream's angel round in the same quarter.</p>
+<p>Tools &amp; Open-Source Releases</p>
+<p>Twenty-nine tools added, the largest haul on record for this tracker,
+and the composition matters more than the count. Nine candidates were
+skipped as already tracked, which is a healthy dedupe rate.</p>
+<p>Agent sandboxing and containment is the fastest-moving open-source
+cluster: Hazmat (August 17, runs coding agents under a separate OS
+account with roughly 5.5% of its code TLA+-verified, which is close to
+unheard of in this tooling class) and forkd (KVM microVM runtime). Both
+address the problem Xpander is commercialising.</p>
+<p>Agent runtime control: Pipelock as an enforcement layer between
+coding agents and the network, Adrian as a runtime monitoring and
+authorization layer, Praxen comparing an agent's declared policy against
+its observed behaviour — which is, more or less, what Arrakis Security
+raised $8M to do.</p>
+<p>Detection content: Agent Threat Rules is the first serious attempt at
+a shareable Sigma-style format for agent threats, 330 rules across nine
+attack categories. Whether it gains the community traction Sigma did is
+the thing to watch; a shared detection format would matter more to this
+category than most funded products.</p>
+<p>Offensive and research tooling: OpenHack from Hadrian, Sandyaa from
+SecureLayer7 (which produces working exploits rather than findings,
+putting it firmly across the line), Vigolium's hybrid of 235
+deterministic modules plus an agent, and Lyrie and DarkMoon as
+open-source autonomous pentest. Trail of Bits open-sourced Buttercup,
+its DARPA AI Cyber Challenge runner-up cyber reasoning system credited
+with 28 vulnerabilities found and 19 patched, and paired with OpenAI on
+Patch the Planet to apply it to open-source maintainer workflows with
+human review before disclosure.</p>
+<p>Vendor-released open source: Microsoft's AI Red Team shipped Clarity
+and RAMPART, both used internally first. Cisco AI Defense published
+mcp-scanner. Snyk shipped agent-scan across Claude, Cursor, Gemini CLI
+and Windsurf. Meta added CyberSOC Eval and AutoPatchBench to the
+CyberSecEval family, the former built with CrowdStrike — a frontier lab
+and a security incumbent co-defining the evaluation standard for a
+category they both sell into is worth noting.</p>
+<p>Standards: the OWASP Top 10 for LLM Applications 2026 published
+2026-08-04, the first edition weighted 75% community vote and 25% real
+incident data from 6,639 incidents. Excessive Agency moved from LLM06 to
+LLM03. That three-place jump is the clearest single indicator available
+that agentic risk has overtaken prompt-level risk in practice, and it
+comes from incident data rather than opinion.</p>
+<p>Conference Highlights</p>
+<p>Black Hat USA 2026 and DEF CON 34 were covered in the August 7 and
+August 14 runs. Three things those runs missed.</p>
+<p>RECon 2026 (June 19-21, Montreal) ran 'Agentic Reverse Engineering:
+Building Custom AI Skills with Coding Agents' and 'Deobfuscation in the
+Age of Agentic Reverse Engineering', plus a workshop on adapting Ghidra
+to new languages. This is a direct hit on a tracked category and our
+conference sweep is Black-Hat-and-DEF-CON-weighted enough to have
+skipped it. RECon should be a standing entry in the conference list.</p>
+<p>IEEE S&amp;P 2026 (May) gave a Distinguished Paper Award to
+GPUBreach, demonstrating RowHammer-on-GPU exploitation of the ML stack
+for OS-level privilege escalation — a hardware-layer attack on AI
+infrastructure, which is a surface this tracker does not otherwise
+cover. Also accepted: PILOT (LLM plus call-path-guided fuzzing) and an
+empirical study of human-AI collaboration in SOCs.</p>
+<p>USENIX Security 2026 (August 12-14, Baltimore) drew roughly 3,030
+submissions with AI/ML security at about 18.9% of accepted work, and
+introduced an open-science policy requiring datasets, scripts and source
+at submission. For AI-security research specifically, where
+reproducibility has been poor, that is a meaningful structural change.
+ICML 2026 (July) accepted more than 6,500 papers including AgentHijack,
+benchmarking computer-use-agent robustness to environment corruption.
+OffensiveCon 2026 ran a dedicated AI-powered bughunting training
+course.</p>
+<p>Upcoming and outside the window: Offensive AI Con (San Diego, October
+4-7), Hexacon 2026 (Paris, October 16, with a keynote on AI for
+vulnerability research), and [un]prompted Sydney (September 18-19,
+chaired by Gadi Evron).</p>
+<p>Newsletter Roundup</p>
+<p>Venture in Security (Ross Haleliuk): two long essays in the window,
+'What works against Mythos today is what worked against ransomware five
+years ago' (May 12) and 'Cybersecurity is really boring' (May 19), both
+arguing that AI accelerates existing security problems rather than
+creating new ones and that 90%+ of breaches still trace to operational
+discipline rather than missing tooling. Notably, Haleliuk highlighted no
+vendors as noteworthy in either piece — the only company names are
+sponsors. Cadence appears to have dropped mid-2026, consistent with his
+being heads-down on a stealth startup.</p>
+<p>Unsupervised Learning (Daniel Miessler), issue #539 (August 14): a
+Black Hat and DEF CON recap plus a debate with Jason Haddix over whether
+AI ends conventional security conferences by 2027. Entities Miessler
+explicitly flagged: Cloudflare (three separate product mentions
+including its agent browser and Workflows-as-CI/CD), Y Combinator
+open-sourcing its 'QM' multi-agent work harness, Nous Research's Hermes,
+and Unit 42's research on Aeternum malware using the Polygon blockchain
+for command and control.</p>
+<p>AISecHub (Tal Eliyahu): continues its monthly ranked digest of newly
+published open-source AI-security repositories. The May 2026 issue
+supplied sixteen of the tools added this run, including Claude-BugHunter
+(~1,260 stars), AiSOC (~1,049) and forkd (~906). This is the single
+highest-yield source in the tools sweep and should stay a standing
+fetch.</p>
+<p>Software Strategies Blog (Louis Columbus): the July 6 post on
+Gartner's $248.9B security forecast is the most quotable datapoint of
+the quarter — securing AI is projected as the only security segment
+accelerating through 2030, overtaking endpoint protection as the largest
+line item by 2029 or 2030. That is the macro case for this entire
+tracker in one sentence.</p>
+<p>Helmet Watch</p>
+<p>No Helmet Security news this quarter. The tracked profile remains
+current: $9M seed announced December 2025 led by SYN Ventures with
+WhiteRabbit Ventures, Fred Kneip (previously founder of CyberGRX) as CEO
+and Kaushik Shanadi as co-founder and CTO, securing agentic AI and MCP
+communications from the Washington DC area.</p>
+<p>Two competitive notes rather than Helmet news. SYN Ventures, Helmet's
+lead, also led Balance Theory's $19M Series A on August 1, so the fund
+is building a broader position in the AI-security space. And the MCP
+governance segment Helmet occupies got materially more crowded this
+quarter: JetStream shipped a Verified MCP catalogue layer, Runlayer
+raised a $30M Series A, Snyk and Cisco both released MCP scanners, and
+Microsoft, Okta and Cloudflare all shipped MCP-aware controls natively
+into their platforms. The agent supply-chain trust registry identified
+as idea 58 above is adjacent to Helmet's position and worth discussing
+internally rather than only logging.</p>
+<p>Process Notes and Carry-Forward</p>
+<p>Four gaps from this run, all caused by exhausting the session's
+web-search budget partway through the sweep. Carried to 2026-08-24: the
+five geographic-outlet queries (Calcalist, Sifted, BetaKit, Inc42 and
+MoneyControl, KrAsia); the Gartner Cool Vendors, Forrester Wave, Fortune
+Cyber 60 and Harmonic Hot 25 aggregator lists; the ten targeted
+stub-remediation searches; and verification of six thin leads — Legion
+Security, Sahl, Kanary, RST Cloud, Silent Push and the YC W26 names Clam
+and Cascade.</p>
+<p>Two items flagged as unverified and deliberately not written into the
+tracker: a claim that an attacker used Claude Code and GPT-4.1 to breach
+nine Mexican government agencies between December 2025 and February
+2026, which could not be corroborated against a primary source and
+predates the window; and the exact close date of the Palo Alto Networks
+acquisition of Protect AI, which appears in a 2026 roundup but most
+likely closed in 2025.</p>
+<p>Index hygiene. Companies: 284 entries, up from 235. Funding Rounds:
+168, up from 140. Exits &amp; M&amp;A: 64, up from 54. People &amp;
+Thought Leaders: 110, up from 89. Tools &amp; Projects: 96, up from 67.
+Themes: 65. Startup Ideas: 60. Sources: 446, up from 372. Two
+pre-existing duplicate company rows (Exaforce, Token Security) remain
+flagged from earlier runs and should be merged in a dedicated cleanup
+pass rather than mid-research.</p>
 <p>Weekly Update — Week of 2026-08-10</p>
 <p>Normal 7-day weekly run (window 2026-08-07 to 2026-08-14, attempt 1).
 Not a quarterly deep dive — the last was 2026-05-18, 88 days ago, so the
