@@ -2276,6 +2276,38 @@ Themes: 65. Startup Ideas: 60. Sources: 446, up from 372. Two
 pre-existing duplicate company rows (Exaforce, Token Security) remain
 flagged from earlier runs and should be merged in a dedicated cleanup
 pass rather than mid-research.</p>
+<p>ADDENDUM (post-run, 2026-08-21): Asymptote Labs added as company #285
+after a direct question exposed a structural gap in the process. We have
+carried its open-source project, Agent Beacon, in the Tools tab since
+the 2026-07-10 run, but never created a company row for the maintainer.
+The company was therefore absent from every company-level count, filter
+and dashboard view even though we had been tracking its product for six
+weeks. The cause is that the tools sweep and the company sweep are
+separate passes with nothing reconciling a tool's maintainer field
+against the Companies tab. Standing fix from next run: after the tools
+pass, diff every 'Affiliation / Maintainer' value against the Companies
+tab and open a row for any commercial maintainer that lacks one. Two
+founders added to People (#111 Justin D'Souza, #112 Shukan Shah) and
+four sources recorded.</p>
+<p>Asymptote is worth more than a correction line. Founded 2025 by
+Justin D'Souza and Shukan Shah, who built Doppel's ML platform and SOC
+automation respectively, backed by South Park Commons (Doppel's earliest
+investor) with an angel roster that is almost entirely sitting CISOs and
+security VPs — Brex, Amplitude, OKX, Vercel, Silicon Valley Bank. Round
+size undisclosed, announced 2026-01-05. Its differentiation is open-core
+in a category that is otherwise uniformly closed SaaS: the argument is
+that enterprises should own a portable system of record for agent
+activity rather than accept a vendor schema. The founders' public thesis
+— that the precondition for governance is a normalised visibility layer
+across local, CI and cloud harnesses — is a direct swipe at every
+competitor selling control before observability, and it is a reasonable
+one. Relative to Helmet Security (#131), the two are adjacent but not
+directly competitive: Helmet instruments the MCP server and connection
+layer agentlessly via existing EDR, while Asymptote instruments the
+coding-agent harness itself. Helmet sees agent-to-tool infrastructure;
+Asymptote sees developer-agent workflow. The overlap grows if either
+extends toward the other's surface, and Asymptote's open-source
+distribution is the sharper go-to-market weapon of the two.</p>
 <p>Weekly Update — Week of 2026-08-10</p>
 <p>Normal 7-day weekly run (window 2026-08-07 to 2026-08-14, attempt 1).
 Not a quarterly deep dive — the last was 2026-05-18, 88 days ago, so the
