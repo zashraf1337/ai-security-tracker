@@ -1735,6 +1735,42 @@ with IR firms and MSSPs for distribution.</p>
 runtime that reasons about agent plans, tool calls, and data lineage,
 with simulation, a 'deny-explain' UX, and auditing built in.</p>
 <p><strong>10. Update cadence</strong></p>
+<p>Addendum — 2026-09-28: NVIDIA Open Agent Safety Platform and a new
+tag for agent runtime security</p>
+<p>NVIDIA launched the Open Agent Safety Platform on 2026-09-28. It has
+two parts. OpenShell is an Apache-2.0 runtime that runs each agent in a
+kernel-isolated sandbox and enforces a verifiable policy from outside
+the agent's process. Sentry is a reference design on BlueField-4 DPUs
+that watches every request on the node's only path to the model and can
+quarantine an agent in milliseconds, even if the host is compromised.
+OpenShell supports Claude Code, Codex, Copilot CLI and custom agents,
+and runs without NVIDIA hardware.</p>
+<p>The launch cites the recent eval-breakout incidents directly and
+signs up more than 100 organisations: Anthropic (Claude Managed Agents),
+SpaceXAI (Cursor and Grok), Scale AI, Salesforce/Slack, SAP, Red Hat,
+Canonical, SUSE, CrowdStrike, Cisco and Palo Alto Networks. Two tracked
+startups appear, Irregular and Armadin; both rows were refreshed. NVIDIA
+is allowlisted big tech, so OpenShell, Sentry and the Open Secure AI
+Alliance's SAFE exchange were logged as Tools rows, along with a Theme
+and three people (John Myers, Ali Golshan, Ofir Arkin).</p>
+<p>Why it matters: sandboxing and runtime enforcement just became a
+free, open layer with hyperscaler and frontier-lab backing. Startups
+selling only that layer face commoditisation. The open ground is what
+sits around it: policy authoring and verification across runtimes,
+fleet-wide agent inventory, identity and delegated authority across
+vendors, evidence for auditors and insurers, and agents running outside
+NVIDIA estates (laptops, endpoints, SaaS). That last point bears on
+Helmet's gateway and enforcement roadmap.</p>
+<p>Taxonomy change: a new controlled tag, agentrt (Agent runtime
+security &amp; containment), now sits alongside the broad mcp bucket,
+which is relabelled 'Agentic-AI / MCP security &amp; governance'. 27
+companies carry agentrt, including Kontext, Outerlimit, Eve, Tenet,
+Fencio, Certiv, Delphi, Xpander, Guild.ai, Sondera and AccuKnox. The
+audit also found 59 rows, including every company added since early
+September, whose Tags had drifted into free text and were silently
+falling back to keyword matching on the dashboard. All were re-tagged
+onto the vocabulary, and the process doc now states that Tags hold IDs
+only.</p>
 <p>Weekly Update — Week of 2026-09-21</p>
 <p>Window: 2026-09-18 to 2026-09-25. Normal weekly run (deep dive last
 completed 2026-08-21, annual sweep 2026-06-26; neither due). Three
