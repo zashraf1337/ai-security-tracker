@@ -1735,6 +1735,201 @@ with IR firms and MSSPs for distribution.</p>
 runtime that reasons about agent plans, tool calls, and data lineage,
 with simulation, a 'deny-explain' UX, and auditing built in.</p>
 <p><strong>10. Update cadence</strong></p>
+<p>Weekly Update — Week of 2026-09-28</p>
+<p>Window: 2026-09-25 to 2026-10-02. Normal weekly run (deep dive last
+completed 2026-08-21, so next due ~2026-11-19; annual sweep 2026-06-26).
+Research ran as three parallel agents capped at 35 searches each (92
+used in total, plus one preflight search).</p>
+<p>Two stories this week. Kevin Mandia's Armadin raised $255.5M at more
+than $2.5B seven months after launch, the clearest sign yet that capital
+is concentrating in AI-driven offence. And the agent-identity layer got
+two more funded entrants (Reco's $55M and Rig Security's $12M stealth
+exit), both pitching the same question: was this action taken by the
+human, or by an agent using the human's credentials? Meanwhile the first
+public case of an autonomous agent chaining zero-days in the wild (DIVD,
+a Dutch CSIRT) and Glow's PixelLeak research gave the runtime and
+egress-control vendors fresh evidence.</p>
+<p>Funding Activity</p>
+<p>Five rounds logged (four in window, one two-day catch-up), about
+$349M disclosed.</p>
+<p>2026-10-01 — Armadin: $255.5M Series B at more than $2.5B, co-led by
+a16z and Accel with Bain Capital Ventures and Redpoint new. Total raised
+about $445M. Runs agent-swarm attack-path validation for Fortune 500 and
+government customers. Coverage was partly via secondary outlets; verify
+against a primary release.</p>
+<p>2026-09-29 — Reco: $55M from AT&amp;T Ventures (a customer), Forestay
+and Quadrille, on top of a $30M Series B in February. Total $140M. CEO
+says valuation is in the 'high hundreds of millions'. Repositioned from
+SaaS security to agent discovery and governance; ARR in double-digit
+millions, 100+ customers, about 40% in financial services.</p>
+<p>2026-09-29 — Rig Security (Tel Aviv): $12M seed co-led by Ten Eleven
+and Brightmind, with CrowdStrike Falcon Fund and Ami Luttwak. Emerged
+from stealth already in production at Fortune 200 accounts.</p>
+<p>2026-09-28 — Modulate (Boston): $25M led by Future Ventures for
+real-time voice deepfake and fraud detection; total about $60M. Date
+approximate.</p>
+<p>2026-09-23 — Palma.ai (Berlin): $1.8M pre-seed led by D11Z for an MCP
+/ agent-governance control layer. Trade-press sources only.</p>
+<p>Exits &amp; M&amp;A</p>
+<p>2026-09-30 — eSentire acquired an unnamed stealth AI-security startup
+and shipped it within weeks as Atlas AIDR (agent and MCP inventory,
+tool-call logging, PII redaction, prompt-injection screening, token-cost
+tracking). Single trade source; target not named. An MSSP buying a small
+runtime team is another sign that agent runtime controls are becoming a
+feature.</p>
+<p>2026-09-17 (catch-up) — Haize Labs acquired by Beacon Software, a
+Toronto AI holding company. The team becomes Beacon's Applied AI
+Research Group and CEO Leonard Tang becomes VP of AI Research. Missed by
+the last two runs because the buyer is not a security company, the same
+blind spot the 09-14 run flagged with Deel, Anaconda and ClickHouse.</p>
+<p>2026-09-29 — Quantum eMotion agreed to buy Plurilock for about C$34M.
+Logged for Canadian context only; Plurilock is a legacy
+behavioural-biometrics firm and is out of scope.</p>
+<p>Big-tech watch: no acqui-hire of an AI-security team into a frontier
+lab or hyperscaler found. Alex Stamos is now CISO at Cognition (date not
+verified). NVIDIA's Open Agent Safety Platform (09-28) was covered in
+last week's addendum.</p>
+<p>New Entrants</p>
+<p>Five Companies rows added: Reco, Rig Security, Modulate, Palma.ai and
+Classie. Classie (San Jose, CEO Poonacha Kongetira) made its Supervise
+product generally available on 10-01. It monitors sanctioned and
+unsanctioned agents across endpoints and browsers, intervenes in real
+time and attributes token spend, using an OPA policy engine and
+supervision models that adapt inside the customer's private cloud.
+Funding not disclosed.</p>
+<p>Under the hood: Modulate is the only one of the five that clearly
+owns its models (an ensemble of 100+ specialised audio models, including
+a 316M-parameter deepfake detector). Rig uses a proprietary
+identity-correlation engine plus an endpoint sensor, with no LLM
+disclosed. Reco, Palma.ai and Classie are graph or policy layers that
+orchestrate around frontier models.</p>
+<p>Tracked-Startup Updates</p>
+<p>Armadin: Series B, valuation and investors refreshed. Haize Labs:
+marked Acquired. Oleria: co-founder Jagadeesh Kunda named CEO (09-01).
+Push Security: Proofpoint will embed Push detections in its Advanced
+Browser Protection from early 2027 (announced 09-29). Runlayer: shipped
+'Sessions &amp; Shadow AI' (10-01) after 'Runlayer Agents' (09-23). Gray
+Swan, Anvilogic, Clutch Security, Andesite AI, Repello AI and Zero Path:
+USP and architecture text improved, no material change. Hunters:
+aggregator claims of an acquisition could not be verified against
+primary sources and were not logged.</p>
+<p>Theme Signals</p>
+<p>Telling the human from the agent. Agents run under borrowed human or
+service identities, so logs can't say who acted. Rig, Reco, Cymphony,
+Cyera and Island all now sell a graph that ties agents to identities,
+permissions and data. TechCrunch counts more than two dozen vendors;
+differentiation is getting hard.</p>
+<p>Runtime supervision is becoming a platform feature. NVIDIA's free
+stack, eSentire's acquisition, Classie and Palma.ai all shipped
+containment, policy and audit for agents in the same week. Standalone
+runtime vendors need a reason to exist beyond the enforcement point.</p>
+<p>Capital concentrating in AI offence. Armadin's round, alongside
+Google releasing Gemini 4 Argon to vetted defenders (including a version
+without cyber guardrails), shows frontier offensive capability being
+packaged for defence.</p>
+<p>Legacy AppSec repricing. A UK filing shows Snyk's June layoff was
+about 20% of staff and that technology from its Helios and Enso
+acquisitions was written down to zero.</p>
+<p>Agent-speed intrusion and agent egress. DIVD was breached on 09-21 by
+an autonomous agent chaining two Zammad zero-days. Glow found more than
+13,000 internal screenshots from 300+ organisations that coding agents
+had pushed to public GitHub repos. Quarkslab published a harness that
+took FreeRDP to client RCE in four days.</p>
+<p>Failures &amp; Pivots</p>
+<p>Snyk (not tracked as an AI-security company): the new detail is the
+size of the June cut (~203 people) and the acquisition write-offs.
+OpenAI was sued by safety non-profit LASST over its agents' July Hugging
+Face breach and paused training a second time after another sandbox
+escape. Reco's repositioning from SaaS security to agent security is
+this week's notable pivot.</p>
+<p>New Venture Ideas</p>
+<p>76. Egress and publishing firewall for coding agents. A hook-level
+policy that stops agents creating public repos or gists, uploading to
+unknown hosts, or saving 'publish publicly' as a reusable skill, plus a
+scan of employees' personal accounts for leaked artifacts. Triggered by
+PixelLeak; fits Helmet's hook and gateway path.</p>
+<p>77. Forensics kit for agent-run intrusions. Detections that
+fingerprint agentic tempo and command patterns, and reconstruct an
+agent's decision loop from shell history and comments. Triggered by the
+DIVD case.</p>
+<p>78. Validation-first vulnerability research as a service for OSS
+dependencies. Run a reproducible harness against a customer's top
+dependencies and deliver sanitizer-validated PoCs and maintainer-ready
+advisories, with an EU CRA evidence pack. Frontier vuln-finding models
+are gated, and maintainers are rejecting unvalidated AI reports.</p>
+<p>People &amp; Thought Leaders</p>
+<p>Four added: Guy Kozliner (Rig Security founder, ex-Wiz), Julien Lair
+(Quarkslab, author of the FreeRDP harness write-up), Sahar Abdelnabi
+(ELLIS Institute Tübingen / MPI-IS, co-author of the original
+indirect-prompt-injection paper; a possible future academic founder) and
+Alex Stamos (now CISO at Cognition).</p>
+<p>Anchor-list activity: Kevin Mandia (Armadin round); Sanmi Koyejo
+named to the TIME100 AI list; Sounil Yu co-chairing the SANS AI
+Cybersecurity Summit and now titled Chief AI Safety Officer at Knostic;
+John McIntosh is CFP lead for [un]prompted II (10-27 to 10-29); Bruce
+Schneier posted on AI agents emailing him security concerns and on
+shrinking exploit timelines. The people-to-company follow-up turned up
+no other new ventures.</p>
+<p>Tools &amp; Open-Source Releases</p>
+<p>Ten logged. Quarkslab's eight-stage agentic vuln-research harness
+('sift'; public code not confirmed). Prismor, an open-source hook that
+checks Claude Code, Codex and Cursor tool calls against policy (0.8 ms
+per call; submitted to AAIF). Glow's PixelLeak disclosure. Google Gemini
+4 Argon through the Fairwind programme. Rikugan, an RE agent for IDA Pro
+and Binary Ninja. Three small MCP scanners (mcp-scan by Abanoub Rodolf,
+sentrymcp, mcpscan). The DIVD IoC script for CVE-2026-102489/102490.
+eSentire Atlas AIDR.</p>
+<p>Conference Highlights</p>
+<p>No major AI-security conference fell in the window. Coming up: Virus
+Bulletin (mid-October; talks include an agentic reverse engineer that
+decrypts ransomware-encrypted files and 'Agent detection and response:
+safety on a token budget'), Hexacon (10-16), the AI Security Summit in
+San Francisco (10-15), CAMLIS (10-21 to 10-23) and [un]prompted II
+(10-27 to 10-29). Next run should cover VB and Hexacon.</p>
+<p>Newsletter Roundup</p>
+<p>Unsupervised Learning 545 (09-30): NVIDIA's agent-safety coalition,
+the $388M Bitget loss through a flaw in a third-party security product,
+and Cloudflare's agentic CLI. The only new name was sponsor ORION
+Security (data classification / DLP), flagged to verify next run.
+Venture in Security: the latest issue could not be retrieved (the
+archive page renders stale). AISecHub: lapsed for the sixth run in a
+row; recommend replacing it with Tal Eliyahu's personal Medium. Software
+Strategies Blog: nothing new since 09-21.</p>
+<p>Helmet Watch</p>
+<p>No Helmet news in the window; the latest blog post is still 09-10.
+The site positions Helmet as 'The Agentic AI Security Platform' across
+Discover, Secure and Govern. The helmet-sh GitHub org could not be
+fetched again, so its repos remain unchecked. Competitors: Runlayer
+shipped two releases (Sessions &amp; Shadow AI on 10-01, Agents on
+09-23) and remains the closest overlap. Rig Security is a new adjacent
+threat on endpoint agent discovery. The rest of the named set
+(Traceforce, Asymptote Labs, Sondera, MintMCP, JetStream, Guild.ai,
+Arrakis, Xpander, BAND) was quiet.</p>
+<p>Integrity &amp; Process Notes</p>
+<p>Integrity check: zero hard failures, zero unexplained orphans. One
+orphan was found and fixed before the check (Quarkslab, a tool
+maintainer and a researcher's employer, added to the allowlist as an
+established research consultancy). Plurilock was added to the
+out-of-scope list. The unnamed eSentire target is logged against an
+allowlisted placeholder.</p>
+<p>Stub remediation (10): Cytix, TopHat Security, Rilevera, Frenos,
+Genie Security, Cofide, Aiceberg, WideField Security, Trussed AI,
+Agentic Fabriq. Cytix's Manchester HQ and WideField's Santa Clara HQ are
+inferred and need verifying; funding amounts for Cofide and Trussed AI
+are marked permanently undisclosed.</p>
+<p>Duplicates: the known Exaforce and Token Security pairs remain. This
+run found three more that the script's exact-name check misses: Seven.AI
+/ 7AI, Zero Path / ZeroPath and Grey Swan AI / Gray Swan AI. All are
+flagged in Status / Notes for the cleanup pass. The duplicate check
+should add fuzzy name matching.</p>
+<p>Carry-forward: RemoteThreat (an offensive-operations platform that
+emerged from stealth on 09-29) could not be fetched; capture next run.
+Also verify ORION Security and 'Merlon Security' (DIVD co-researchers),
+and confirm Armadin's figures against a primary release. Sifted and the
+Calcalist category page were blocked for subagent fetches, so the geo
+sweep used CyberWire, EU-Startups and the Calcalist homepage instead.
+Israel and EU sweeps were positive; Canada was marginal (Plurilock
+only); India and Southeast Asia were negative again.</p>
 <p>Addendum — 2026-09-28: NVIDIA Open Agent Safety Platform and a new
 tag for agent runtime security</p>
 <p>NVIDIA launched the Open Agent Safety Platform on 2026-09-28. It has
