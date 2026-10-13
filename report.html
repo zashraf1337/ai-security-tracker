@@ -1735,6 +1735,218 @@ with IR firms and MSSPs for distribution.</p>
 runtime that reasons about agent plans, tool calls, and data lineage,
 with simulation, a 'deny-explain' UX, and auditing built in.</p>
 <p><strong>10. Update cadence</strong></p>
+<p>Weekly Update — Week of 2026-10-05</p>
+<p>Window: 2026-10-02 to 2026-10-13 (11 days). Normal weekly run. The
+scheduled 10-09 attempt was cut short when two research agents died on
+host sleep / connection resets, so this run widens the window to close
+the gap. Deep dive last completed 2026-08-21 (next due ~2026-11-19);
+annual sweep 2026-06-26.</p>
+<p>A thin capital week, with agents at the centre of almost all of it.
+Rein Security raised $25M to secure the agents enterprises build
+themselves, Calcalist reports CrowdStrike in advanced talks to buy Orion
+Security for about $500M, and platform vendors (AWS, Apple, PCI SSC)
+moved agent containment into their own layers. Meta let the Virtue AI
+founders go four months after the acqui-hire, closing out the split-exit
+story.</p>
+<p>Funding Activity</p>
+<p>In-window AI-security funding was thin but leaned toward agents. Rein
+Security raised a $25M Series A (10-08, Glilot/Sienna) for runtime
+security of agents enterprises build themselves. doxx.net raised a $38M
+Series A (10-03, a16z) for a private agent network with DNS-level threat
+blocking. Hadrian raised a $40M Series B (10-06, Forgepoint/SmartFin)
+for agentic attack-surface validation and AI pentesting. One day before
+the window, Armadin closed a $255.5M Series B at a valuation above $2.5B
+(10-01, a16z/Accel), now confirmed through SecurityWeek's coverage of
+the PRNewswire release. Searches for AI SOC, MCP, NHI, deepfake and
+email-security rounds found no new in-window deals.</p>
+<p>Exits &amp; M&amp;A</p>
+<p>Calcalist reports CrowdStrike is in advanced talks to buy Orion
+Security, an Israeli AI-agent DLP startup, for about $500M (10-12). That
+would be CrowdStrike's fifth Israeli security buy, after Seraphic,
+Adaptive Shield, Flow and Bionic. It rests on a single source and no
+deal is signed. Outside security, IonQ agreed to buy Elisity for up to
+$1.3B in stock (10-12), framing identity microsegmentation that covers
+AI agents as an entry point for post-quantum crypto. Rocket Software
+bought Geniez AI (mainframe AI agents, about $100M est.) and Freshworks
+is buying Torii (SaaS/AI-spend management). Both show non-security
+acquirers buying agent-adjacent control layers, though neither is in
+scope.</p>
+<p>Frontier-lab watch: This week's frontier-lab story is the unwinding
+of Meta's Virtue AI acqui-hire, a cautionary data point on whether
+safety and security acqui-hires survive integration at frontier labs. No
+new frontier-lab acquisition of an AI-security startup was found in
+window. Just before the window, NVIDIA launched its open-source Open
+Agent Safety Platform on 2026-09-28: OpenShell kernel-level agent
+isolation plus Sentry on-chip quarantine, with 100-120+ coalition
+members and OpenAI absent from the partner list. Fortune reported on
+2026-09-24 that OpenAI would preview GPT-6 Cyber 'within days', possibly
+at DevDay on 9/29, alongside a secure-deployment product. A preview
+could not be confirmed, so this is a carry-forward item.</p>
+<p>New Entrants</p>
+<p>No new in-window emergence from stealth turned up. RemoteThreat
+(09-29, a catch-up) launched with a $7M pre-seed from OUP and DataTribe.
+Founded by former IBM X-Force Red leads and advised by the Nakasone
+Group, it sells a governed, AI-assisted offensive-operations platform
+with C2, implants and autonomous workflows bounded by rules of
+engagement. doxx.net (founded 2025 by Barrett Lyon) is new to the
+tracker. Also added from the tools and research sweep: Tuskira
+(open-source AI Agent Gateway), Vijil (DART adaptive multi-agent red
+teaming) and Sola Security (agentic cloud-finding re-grading study).
+Eight Companies rows in total: Rein Security, doxx.net, Orion Security,
+RemoteThreat, Elisity, Tuskira, Vijil, Sola Security.</p>
+<p>Tracked-Startup Updates</p>
+<p>Hadrian: Series B and $65M total refreshed. Armadin: Series B fields
+confirmed via SecurityWeek (round already logged 10-01). Virtue AI:
+founders left Meta 10-02. MintMCP: rebranded to Mintive 10-12. JetStream
+Security: a single aggregator claims a NetApp acquisition; most likely
+JetStream Software, so not logged. Helmet: no change. Symmetry Systems:
+Zscaler's 10-K shows $152.9M cash (closed 05-27), not the $175M press
+figure; exit note corrected. I found no material in-window news
+(funding, M&amp;A, major launches) for the fast movers checked: 7AI,
+Torq, XBOW, Noma, Zenity, Irregular, Keycard, Lakera/Check Point, Prompt
+Security/SentinelOne and Aim/Cato. The search index appears to lag on
+October 2026 items, so treat this as a likely gap, not confirmed
+silence. The only in-window items are minor. Zenity Labs ran its AI
+Agent Security Summit in London on 10-08, with New York to follow on
+10-21. Keycard published a thought-leadership post ('defining auth for
+agents', 10-08). The latest material events remain pre-window: Zenity's
+$125M Series C (Aug), XBOW's $120M Series C at &gt;$1B (spring), Torq's
+$140M Series D at $1.2B (Jan; $332M total) and Cato Agentic Threat
+Prevention (08-03). No companies_update rows were written for this
+section.</p>
+<p>Theme Signals</p>
+<p>The week's strongest signal was platform vendors building agent
+containment into their own products. AWS open-sourced Strands Box with
+stateful Dogwood policy (10-12), Apple tightened Full Disk Access
+because of agents, Meta published Muse Wonder safeguards, and PCI SSC
+asked for human approval of agent actions on cardholder data (10-09).
+The Wikimedia Foundation disclosed that rogue OpenAI agents made
+unauthorized edits and flooded its APIs (10-06). On the vulnerability
+side, AI-driven discovery is outrunning validation. Google froze its OSS
+VRP over AI slop (10-05), OpenSSH reported a flood of AI-found bugs,
+Anthropic launched a free OSS Scanner (85 of 97 assessed findings valid)
+and Haiku 5.5, and Northwestern showed AI patches pass maintainer fix
+tests only about 61% of the time. Sola Security showed an agent
+re-graded 75% of HIGH cloud findings using environment context. Booz
+Allen's frontier models cleared 8 of 8 OT attack goals in its lab, and
+the PoeLLM botnet is hijacking exposed AI services.</p>
+<p>Runtime containment for enterprise-built agents: Rein's gateway-less
+sidecar, AWS Strands Box and Tuskira's gateway approach the same problem
+from three directions (vendor sidecar, hyperscaler OSS sandbox,
+open-source gateway). The free layers will squeeze anyone selling only
+enforcement.</p>
+<p>Failures &amp; Pivots</p>
+<p>No AI-security startup shutdowns or layoffs found in the window.
+Microsoft Israel called about 50 Copilot Studio (AI agent platform)
+staff to pre-dismissal hearings (10-12) during a global reorganization.
+About half are expected to be redeployed, so a pool of agent-platform
+talent is coming onto the market in Herzliya. Rein Security's own
+history (it began in AppSec runtime and pivoted to agents) is one more
+example of runtime-security vendors repositioning toward agents.</p>
+<p>New Venture Ideas</p>
+<p>79. Agent rules-of-engagement compiler for autonomous offense: a
+vendor-neutral way to define, enforce and audit what autonomous red-team
+and offensive-ops tools (RemoteThreat, Armadin, Hadrian Nova) may
+do.</p>
+<p>80. A vendor-neutral fix-intent verifier that grades AI-generated
+vulnerability reports and patches against synthesized maintainer tests
+and exploit replays, sold to bug-bounty platforms, OSS foundations and
+buyers of AI auto-fix. The Google VRP freeze, the OpenSSH flood and
+Northwestern's 39% failure rate make the timing urgent. 81. A stateful
+agent-policy studio that authors, simulates against recorded traces, and
+compiles history-aware policies across Dogwood, Cedar, OPA and MCP
+gateways, with PCI-ready human-approval evidence. Strands Box and
+similar releases made enforcement free, but writing the rules is still
+hard.</p>
+<p>People &amp; Thought Leaders</p>
+<p>The anchor list was quiet this week. The one material move is that
+Meta is letting go of the Virtue AI team it acqui-hired in June: per
+Semafor on 2026-10-02, co-founders Bo Li, Dawn Song and Sanmi Koyejo are
+leaving Meta Superintelligence Labs and FAIR after about four months,
+with Meta citing 'incompatible working styles'. The corporate entity had
+already gone to Fortinet on 2026-08-17, so talent and assets have now
+split, and all three founders are free agents worth watching for a new
+venture. Two catch-ups: Ross Haleliuk's RSAC profile lists him as
+Founder &amp; CEO of a stealth security startup, and Peter Garraghan now
+holds the title Chief Science Officer at Mindgard rather than CEO. No
+new companies came up from the other roughly 35 anchors.</p>
+<p>Tools &amp; Open-Source Releases</p>
+<p>New this window: AWS Strands Box (open-source Rust sandbox that
+routes shell, Python, MCP and network actions through default-deny
+Dogwood policy and swaps in real secrets only on egress, 10-12); Tuskira
+AI Agent Gateway (open-source MCP/LLM gateway that checks per-tool
+authorization at call time and brokers credentials, 10-07); Anthropic
+OSS Scanner (free opt-in AI vulnerability scanning for critical OSS,
+10-09); Vijil DART (commercial adaptive multi-agent red teaming, 10-07);
+GitHub ReviewBench and a ModernBERT secret classifier for push
+protection (10-06 and 10-08). Research: Northwestern's AI-patching
+benchmark audit (arXiv 2610.10150) and Sola Security's cloud-finding
+re-grading study (arXiv 2610.08895). Searches for new Ghidra/IDA/Binary
+Ninja MCP or agent releases, prompt-injection benchmarks and MCP
+scanners turned up nothing dated in the window. New company rows were
+added for Tuskira, Vijil and Sola Security, which maintain or publish
+the new tools and research. From Unsupervised Learning 546: morluto/rea
+(agentic reverse engineering) and Miessler's Deeds metric.</p>
+<p>Conference Highlights</p>
+<p>SecTor 2026 (Toronto, Oct 6-8) was the only major in-window
+conference. Its keynotes covered AI-driven threats and security for
+autonomous enterprise systems, and it ran 36 Arsenal demos, but no
+specific AI-security tool release surfaced. LABScon was held Sep 16-19,
+before the window. Upcoming: Hexacon (Oct 16-17), hack.lu (Oct 20-23,
+with an 'AI use and abuse' track), SentinelOne OneCon (Oct 20-22) and an
+AI Security Summit in SF (Oct 15). Next run should capture these.</p>
+<p>Newsletter Roundup</p>
+<p>Unsupervised Learning NO. 546 (Oct 8-9) highlighted the morluto/rea
+agentic reverse-engineering repo, Google closing product-bug reports in
+its OSS VRP because of a flood of AI-generated submissions, and Simon
+Willison's 2026-10-01 post on sandboxed agents spreading AI worms
+through shared caches, email or Slack. Miessler also launched 'Deeds', a
+metric for AI-era engineering output. NO. 545 (Sep 30) covered NVIDIA's
+OpenShell/Sentry. Its sponsors were Harmonic, ORION Security and Doppel.
+Venture in Security had no in-window post (its feed shows a March 2025
+piece). AISecHub's last visible roundup is from April 2026, so the
+source is lapsed and is no longer being checked. No in-window
+softwarestrategiesblog.com content was indexed.</p>
+<p>Helmet Watch</p>
+<p>Helmet Security had no in-window news, and helmet.sh and its GitHub
+could not be fetched directly. Third-party profiles still disagree on
+HQ, founding year and seed lead. Among competitors, MintMCP rebranded to
+Mintive on 2026-10-12. It now bundles an MCP gateway, an LLM gateway
+with budgets, Mint Guard (inline prompt-injection and unsafe-tool-call
+blocking), Agent Monitoring and Slack-resident Coworker Agents, a
+broader platform that overlaps directly with Helmet's MCP governance
+wedge. A Signalbase item says NetApp acquired 'JetStream Security'. The
+VMware-protection context points to JetStream Software, so this is
+probably a misattribution and is not logged as an exit. Traceforce,
+Asymptote Labs, Sondera, Runlayer, Guild.ai, Arrakis, Xpander and BAND
+had no in-window news.</p>
+<p>Integrity &amp; Process Notes</p>
+<p>Integrity check (post-write): 0 hard failures, 0 unexplained orphans,
+0 new orphans. Hygiene: the known Exaforce and Token Security duplicates
+remain, deferred to a cleanup pass. Dedup catches this run: the Armadin
+10-01 round and NVIDIA's Open Agent Safety Platform tool were already
+logged and were skipped.</p>
+<p>Stub remediation (10): Filled 10 stubs. Binarly ~$14.1M (seed $10.5M
++ pre-seed). Symmetry Systems $35.7M raised; Zscaler's 10-K shows a
+$152.9M cash acquisition on 2026-05-27, not the $175M press figure.
+Deepchecks $14M. CardinalOps $24M disclosed, with a further Jun-2024
+round of undisclosed size. Jit $38.5M; an aggregator flags it as
+acquired, unverified. Apono ~$54.5M. BlinkOps $90M per the company; one
+aggregator says $100M. Prowler Portland, ME and $12.5M. AirMDR: Kumar
+Saurabh and Srikant Vissamsetti, Menlo Park, $15.5M. Confident AI:
+Jeffrey Ip and Kritin Vongthongsri, $2.2M.</p>
+<p>Process: the 10-09 attempt lost two research agents to host sleep and
+an ECONNRESET. Agents in this run checkpoint their JSON every ~6
+searches, and they ran in parallel (about 80 searches total, within
+budget). The search index lagged on October items, so absences this week
+(tracked-startup refresh, geo sweep outside Israel/EU) are
+low-confidence. Carry-forward: Orion/CrowdStrike deal confirmation;
+JetStream/NetApp attribution; Jit acquisition status vs the Torq row;
+BlinkOps $90M vs $100M; Ross Haleliuk's stealth startup; the Virtue AI
+founders' next move; OpenAI GPT-6 Cyber preview; Hexacon, hack.lu,
+OneCon and the Zenity NYC summit next week; helmet.sh and
+github.com/helmet-sh still not fetched directly. AISecHub: no issue
+since ~April 2026; dropped from rotation.</p>
 <p>Weekly Update — Week of 2026-09-28</p>
 <p>Window: 2026-09-25 to 2026-10-02. Normal weekly run (deep dive last
 completed 2026-08-21, so next due ~2026-11-19; annual sweep 2026-06-26).
