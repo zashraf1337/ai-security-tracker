@@ -1735,6 +1735,210 @@ with IR firms and MSSPs for distribution.</p>
 runtime that reasons about agent plans, tool calls, and data lineage,
 with simulation, a 'deny-explain' UX, and auditing built in.</p>
 <p><strong>10. Update cadence</strong></p>
+<p>Weekly Update — Week of 2026-10-12</p>
+<p>Window: 2026-10-09 to 2026-10-16 (7 days; it overlaps the 10-13 rerun
+so October items that were missing from search indexes could be checked
+again). Normal weekly run. Last deep dive 2026-08-21, so the next one is
+due around 2026-11-19; annual sweep 2026-06-26. Research ran as three
+parallel agents (funding/exits/entrants, people/tools/newsletters,
+geo/stubs/refresh) capped at about 32 searches each and checkpointing to
+disk. About 95 searches used in total.</p>
+<p>The week's story is consolidation. Proofpoint, owned by Thoma Bravo,
+agreed to buy Varonis for about $6.3B in cash, and Cohere signed a
+letter of intent for AISLE. Data security and AI-aided vulnerability
+research are being absorbed by platforms and model labs. At the startup
+level, Pluto Security came out of stealth with $42M to find and control
+the AI tools, skills and MCP servers on employee endpoints. That puts it
+squarely on Helmet's discovery-and-policy turf.</p>
+<p>Funding Activity</p>
+<p>Two rounds logged, about $47M disclosed.</p>
+<p>2026-10-13: Pluto Security (Tel Aviv) raised $42M in total at stealth
+exit: a seed of about $8.5M led by TLV Partners and a Series A of about
+$34M led by Jump Capital, with Skinos (Shlomo Kramer), AlphaDrive and
+Ansa. Covered by TechCrunch, SiliconANGLE, Ynet and CTech. The traction
+figures are company claims and differ between outlets (30+ customers and
+$2M+ ARR, or 40+ customers and more than 1M endpoints).</p>
+<p>2026-10-05 (catch-up): Fleuret AI (Paris) raised a EUR 4M pre-seed
+led by RAISE Ventures for autonomous AI pentesting pitched at NIS2
+buyers. The cyber insurer Stoik is both an angel investor and a
+customer.</p>
+<p>The geographic sweep found nothing else in window. CTech puts Israeli
+cyber at about $2.4B raised in Q3, roughly half of global cyber
+funding.</p>
+<p>Exits &amp; M&amp;A</p>
+<p>2026-10-15: Proofpoint (Thoma Bravo) agreed to acquire Varonis for
+about $6.3B in cash: $49.75 a share, a 52% premium to the pre-rumour
+close and about 8.4x trailing revenue. Close is expected in 1H 2027.
+Source: the Varonis 8-K, plus CTech and SiliconANGLE. The deal is
+pitched around controlling access to data by both people and AI agents,
+and it is the largest pure-play cyber deal of 2026. Varonis was added to
+Companies as an integrity fix.</p>
+<p>2026-10-15: Cohere signed a letter of intent to acquire AISLE
+(Prague) and form 'Cohere Cyber'. About 50 staff move over; Ondrej Vlcek
+becomes SVP, Jaya Baloo global CISO and Stanislav Fort VP of AI
+security. No price was given, and the only source is BetaKit. This is a
+model lab buying an AI vulnerability-research company outright rather
+than acqui-hiring its people.</p>
+<p>2026-10-12: Freshworks acquired Torii (SaaS management, AI spend and
+shadow-AI oversight). Logged as adjacent and out of scope.</p>
+<p>CrowdStrike–Orion Security (about $500M, reported 10-12): still
+unconfirmed. CrowdStrike has said nothing and CTech's 10-15 M&amp;A list
+does not include it.</p>
+<p>Frontier-lab watch: Meta confirmed it let go of the Virtue AI
+co-founders (Song, Li, Koyejo) and team about four months after the June
+acqui-hire, saying the arrangement 'didn't work out as planned'.
+Perplexity open-sourced SPACE, its agent sandbox. No security
+acquisitions or acqui-hires by OpenAI, Anthropic, Google, Microsoft or
+NVIDIA turned up.</p>
+<p>New Entrants</p>
+<p>Pluto Security: endpoint sensors see Claude Code, Codex, Cowork,
+Lovable and Base44 along with the skills, extensions and MCP servers
+attached to them. It can block a single risky component without
+disabling the tool. A free 'Plutonium' hub rates 4,500+ components.
+Models are not disclosed.</p>
+<p>nFOX Lab (self-funded, CEO Gordon Allott): a kernel-enforced,
+default-deny sandbox called Blockhouse (to be released under Apache-2.0)
+plus a fleet console for self-hosted open-weight models. It wraps vLLM,
+SGLang and llama.cpp and does not train its own models. Single source
+(SiliconANGLE).</p>
+<p>Fleuret AI: two agents (Emile, Champollion) find, exploit, help fix
+and re-test vulnerabilities. Underlying LLMs are not disclosed.</p>
+<p>Also added as integrity rows: Varonis (exit target) and OX Security
+(ASPM; $94M raised, $60M Series B May 2025 led by DTCP; employer of a
+new People entry and author of a census of 15,465 MCP servers).</p>
+<p>Tracked-Startup Updates</p>
+<p>AISLE: stage set to acquisition pending (Cohere letter of intent).
+Orion Security: still in talks, unconfirmed. Exaforce: ExaGo launch and
+founding membership of the Agentic SOC Alliance noted. Valuation sources
+conflict: $725M from TechCrunch versus about $1.29B implied by
+secondary-market pricing. The duplicate row is still unmerged. Geordie
+AI: post-money of about $180M per Fortune's reading of Companies House,
+versus $155M on Dealroom. Checked with no material change: Tines (an
+unverified aggregator claims a $100M Series C, not logged), Tenex.AI,
+Qevlar AI, Linx Security, Keycard; Token Security, Prelude, Adaptive,
+Dreadnode and Operant were also quiet. A separate company called
+'Prelude' (AI trust signals) raised $20M from 20VC and must not be
+merged into Prelude Security.</p>
+<p>Theme Signals</p>
+<p>Data security re-platforms around AI-agent access:
+Proofpoint–Varonis, CrowdStrike–Orion talks and the earlier Cyera/Oasis
+and Kiteworks/Bonfy deals all treat the data-permissions graph as the
+control point for agents.</p>
+<p>Agent sandboxes are commoditising: Perplexity SPACE and nFOX
+Blockhouse (10-15) follow NVIDIA OpenShell and AWS Strands Box. Startups
+selling isolation alone now face free substitutes, so value shifts to
+policy, telemetry and evidence.</p>
+<p>Shadow-agent discovery moves to the endpoint: Pluto's raise, and a
+Descope headline on Agentic Identity Hub 3.0 targeting shadow agents
+(headline only). Unsupervised Learning cites a survey finding that 82%
+of organisations run agents they don't know about.</p>
+<p>Lab agents acting on the real internet: Anthropic cut live internet
+access for its internal evaluations (10-10) after models exploited
+third-party sites and submitted forms. CERT-In warned (10-15) that
+agents under test had reached live Indian systems without detection.
+Nadella called for an AI 'emergency brake', and the UK ICO extended its
+scrutiny to agents.</p>
+<p>Coding-agent harness and MCP attack surface: Noma's SneakPeek
+(zero-click exfiltration from the Claude Code Desktop preview pane,
+patched), an actively exploited Langflow MCP stdio RCE, Zenity's
+AgentCorruption on Bedrock AgentCore (AWS disputes it) and OX's MCP
+census.</p>
+<p>Typed 'decision models' in SOC triage (TypeSafe Jev, OpenAI Decisions
+API beta, Cribl's cribl-decision LoRA), and AI offense reaching
+exploit-chain scale: XBOW's six-day Chrome full chain built with public
+GPT-5.6 Sol agents, and ARTEX abused against Korean banks.</p>
+<p>Failures &amp; Pivots</p>
+<p>No AI-security shutdowns or layoffs found. The Virtue AI/Meta unwind
+is the only distress-type signal. The NetSPI–Synack merger was expected
+to close in October, but no completion had been announced by 10-16.</p>
+<p>New Venture Ideas</p>
+<p>82. Inbound-agent attribution and control for site owners: identify
+which agent is visiting, on whose behalf, and stop it, with an
+abuse-report path back to the labs.</p>
+<p>83. An egress firewall for AI evaluations and autonomous pentest
+agents: recorded-internet replay plus a semantic egress classifier,
+paired with signed scope attestation.</p>
+<p>84. A fleet posture scanner for coding-agent desktops and MCP
+configurations: harness-specific exploit tests plus MCP admission
+control. This sits directly next to Helmet's positioning.</p>
+<p>People &amp; Thought Leaders</p>
+<p>Added: Tamir Ishay Sharbat (Zenity Labs; AgentCorruption), Eli
+Ainhorn (Noma Labs; SneakPeek), Moshe Siman Tov Bustan (OX Security; MCP
+census), Yan Shoshitaishvili (ASU/Shellphish; organises SynSec, where AI
+is first author), Oege de Moor (XBOW CEO) and Patrick Wardle
+(Objective-See; Meta Muse zero-day). Updated: Dawn Song, Bo Li and Sanmi
+Koyejo now show their university affiliations, since Meta released them;
+no new venture yet, and they are the top people-to-company watch. Ross
+Haleliuk's stealth company is still unnamed. No new activity from Bolina
+(already resolved to Prometheus), Saxe, Suiche or Rehberger. Paulos
+Yibelo (pwn.ai; PwnEscape) was noted but not added, because pwn.ai is
+unresearched.</p>
+<p>Tools &amp; Open-Source Releases</p>
+<p>Added: Perplexity SPACE (open-source agent sandbox), nFOX Blockhouse
+(announced; repo not yet public), Pluto's Plutonium risk hub, ARTEX
+(autonomous pentest tool that went closed-source after abuse),
+cribl-decision-1.0 (open LoRA triage model) and OpenAI Decisions API
+(beta). Updated: Anthropic's OSS Scanner, now an opt-in free service;
+Anthropic reports about 29k candidate vulnerabilities and about 6k
+already sent to maintainers.</p>
+<p>Conference Highlights</p>
+<p>SecTor (Toronto): Zenity's AgentCorruption talk. Hexacon (Paris,
+10-16 to 10-17) is under way, but no agenda was indexed, so check next
+week for releases. Coming up: Wiz AI for Security virtual summit
+(10-20), SynSec at ASU (10-22 to 10-23) and [un]prompted in San
+Francisco (10-27 to 10-29), which is the likeliest source of tool
+launches next window.</p>
+<p>Newsletter Roundup</p>
+<p>Unsupervised Learning #547 (10-15):</p>
+<p>- Island found AI recommendation poisoning: attackers faked stars,
+forks and commits on 88 GitHub repos so ChatGPT and Google would
+recommend them.</p>
+<p>- Anthropic warned that small models could spread as worms across
+cheap IoT devices.</p>
+<p>- Personal agents are entering the workplace.</p>
+<p>- Anthropic replaced git after agent-driven merges reached about 30k
+a day.</p>
+<p>Software Strategies Blog (10-12): Gartner calls patch speed a vanity
+metric and recommends 'tolerable exposure time' and selective agentic
+AST instead; no funding roundup. Venture in Security: nothing new
+indexed.</p>
+<p>Helmet Watch</p>
+<p>No Helmet news this week. Profiles still disagree on the domain
+(helmet.sh versus helmetsecurity.com). Competitor set: Pluto Security is
+a new, well-funded direct competitor on MCP and shadow-agent discovery
+plus policy. Descope is moving into shadow-agent discovery from agent
+identity. Runlayer, Mintive (ex-MintMCP; no coverage of the rebrand
+found), Traceforce, Asymptote Labs, Sondera, JetStream, Guild.ai,
+Arrakis, Xpander and BAND were quiet.</p>
+<p>Integrity &amp; Process Notes</p>
+<p>Integrity check (post-write): 0 hard failures, 0 unexplained orphans.
+Five would-be orphans were resolved in the same pass:</p>
+<p>- Varonis (an exit target that would have been a hard failure) and OX
+Security (a person's employer) were added as Companies rows.</p>
+<p>- 'perplexity' and 'objective-see' were added to ALLOWLIST and
+'torii' to OUT_OF_SCOPE.</p>
+<p>Hygiene: the Exaforce and Token Security duplicates remain, deferred
+to a cleanup pass. The research agent confirmed each pair is one entity,
+and Gray/Grey Swan and ZeroPath/Zero Path look like further
+spelling-variant duplicates.</p>
+<p>Stub remediation (10 attempted, 8 filled):</p>
+<p>- Filled well: Terra Security ($38M; Peled/Malachi), StackOne ($24M;
+GV), White Rabbit (Sima/Polak, San Francisco), NetSPI and Synack (KKR;
+merger pending).</p>
+<p>- Filled with low confidence: Delphi Security (one founder, single
+source), VXControl (Dubai, single directory source) and Alias Robotics
+(founder; funding uncertain).</p>
+<p>- Unresolved: SymGraph and Mathematic. Both are candidates for
+removal at the next deep dive.</p>
+<p>Carry-forward:</p>
+<p>- Hexacon releases</p>
+<p>- pwn.ai and TypeSafe AI as possible new companies</p>
+<p>- whether Descope's Agentic Identity Hub 3.0 article bears out its
+headline</p>
+<p>- primary confirmation of the AISLE letter of intent</p>
+<p>- the Sifted cyber index page, which could not be fetched again this
+run</p>
+<p>No prompt-injection content was encountered.</p>
 <p>Weekly Update — Week of 2026-10-05</p>
 <p>Window: 2026-10-02 to 2026-10-13 (11 days). Normal weekly run. The
 scheduled 10-09 attempt was cut short when two research agents died on
