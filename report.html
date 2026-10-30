@@ -1735,6 +1735,176 @@ with IR firms and MSSPs for distribution.</p>
 runtime that reasons about agent plans, tool calls, and data lineage,
 with simulation, a 'deny-explain' UX, and auditing built in.</p>
 <p><strong>10. Update cadence</strong></p>
+<p>Weekly Update — Week of 2026-10-26</p>
+<p>Window: 2026-10-23 to 2026-10-30 (7 days). Normal weekly run; next
+quarterly deep dive is due around 2026-11-19 (90 days after 2026-08-21).
+About 105 searches across three parallel research agents plus
+verification.</p>
+<p>A thin week for deals. The real signal was in attacks: agent
+instruction files, IDE extensions and an AI gateway's release pipeline
+were all abused inside ten days, and the Fortune Cyber 60 2027 list put
+agent security in the mainstream. Two companies the weekly cadence had
+missed for months (Bold Security and Reach Security) surfaced only
+through those lists, which is exactly the blind spot the deep dive
+exists to close.</p>
+<p>Funding Activity</p>
+<p>2026-10-28: Northstar Security came out of stealth with a $7M seed
+led by Wing Venture Capital (MVP Ventures, Outliers; angels Gerhard
+Eschelbeck, Renaud Deraison, Justin Somaini). CEO Amer Deeba co-founded
+Normalyze (sold to Proofpoint). It builds a security context graph
+across 70+ tools and exposes it to customers' own agents over MCP. HQ
+rests on a single aggregator that also names a different CEO, so treat
+the HQ as unconfirmed.</p>
+<p>2026-10-28: Upwind's September growth round grew from $300M to $400M
+at an unchanged ~$3.8B valuation, with Canapi Ventures in the $100M
+add-on (CTech). ARR is reported above $50M. Logged as an extension. It
+makes the disputed Datadog ~$4B approach look less likely to land.</p>
+<p>2026-10-30: Cyera is in early talks to raise at about $20B, nearly
+double its $12B mark (The Information via CTech). Talks only; not logged
+as a round.</p>
+<p>Catch-ups logged this week: Reach Security $50M+ Series B led by Top
+Tier Capital (10-13; In-Q-Tel, M12, Ballistic); CodeWall $4M pre-seed
+led by Osney Capital (10-14, London); Bold Security $40M stealth exit
+led by Bessemer (03-15); Tynapse $3.3M seed led by Mirae Asset (04-29,
+Seoul); Zaperon ~$0.8M seed (10-01, Delhi); Escape $18M Series A
+(Balderton, March). Frontier Security's $55M (Lightspeed, Greycroft,
+Harpoon) is logged from a single source, its Fortune Cyber 60
+profile.</p>
+<p>Exits &amp; M&amp;A</p>
+<p>2026-10-27: Protectt.ai, a Bessemer-backed Indian mobile-app-security
+vendor, is taking a controlling stake in AIShield, the AI model-security
+platform incubated at Bosch Global Software Technologies. Bosch keeps a
+minority stake and AI Shield Pvt Ltd runs as a separate entity with the
+IP moved into it. Price and stake are undisclosed, and outlets disagree
+on whether it has closed (Inc42, People Matters, Business Standard).</p>
+<p>Rumours, still not logged as exits: CrowdStrike–Orion (~$500M)
+unconfirmed as of 10-26. Datadog–Upwind is still disputed, and Upwind
+chose to extend its round. No news on OpenAI–Trail of Bits, Cohere–AISLE
+(LOI only; Cohere separately announced a CAD 7B Series E on 10-29) or
+Hex-Rays–HexAI terms. No AI-security acqui-hires into the frontier labs
+or big tech in the window.</p>
+<p>Context, out of scope: CrowdStrike's July deal to buy XM Cyber's IP
+from Schwarz Digits (exposure management, price undisclosed, pending per
+the 10-Q). One single-source German finance site claims it closed in
+mid-October for ~$586M in stock. Not verified, and not logged as an
+AI-security exit.</p>
+<p>New Entrants</p>
+<p>Added to Companies: Northstar Security, AIShield, Frontier Security,
+Bold Security, Reach Security, CodeWall, Tynapse, Zaperon and Escape.
+Frontier Security matters most to watch. Fortune lists Yaron Singer
+(Robust Intelligence, sold to Cisco) as CEO of a 2026 company that
+red-teams frontier models for cyber misuse, with $55M raised. That puts
+it in the lab-side market with Irregular. Only the Fortune profile
+supports it so far.</p>
+<p>Escape launched Cascade 2 'Iguazu', a multi-agent AI pentesting
+engine, on 10-26. Ribon, a stealth Israeli company from a Paragon
+co-founder that has reportedly raised ~$200M at &gt;$1.5B, hired a
+former 8200 commander. CTech describes it both as cyber and as AI
+infrastructure, so it is on the watchlist only.</p>
+<p>Tracked-Startup Updates</p>
+<p>Updated in place: Upwind (extension, valuation), Cyera (talks at
+~$20B), Mave Security ($6M seed confirmed, $34M total), Aembit (HQ and
+CEO confirmed; Series A lead disputed between Acrew and Ballistic),
+Pluto Security (traced a Hugging Face GPU-mining malware campaign across
+31 model repos), and JetStream (Fortune data: ~85 staff, $34M). Noma,
+Dropzone AI, 7AI, Armadin, Straiker and Keycard were stamped for their
+Fortune Cyber 60 2027 listing.</p>
+<p>No material change: Exaforce, Token Security ($28M total per company
+blog), Promptfoo (OpenAI acquisition treated as closed), Pi, Gambit,
+Dreadnode, Prelude Security and SplxAI. Correction to carry forward: a
+May-2026 '$20M Series A led by 20VC' for 'Prelude' belongs to a
+different company.</p>
+<p>Theme Signals</p>
+<p>Agent instruction files are now attack surface. A planted AGENTS.md
+in a Downloads folder steered a coding agent into a malicious npm
+install, reproduced against Codex and Claude Code (Forever Security). A
+trojanized 'anthropic.claude-code' artifact appeared on Open VSX with an
+SSH backdoor. LiteLLM's release pipeline was compromised, reportedly
+with GitHub tokens a coding agent had leaked into logs. Expect demand
+for instruction-file provenance and extension vetting on developer
+endpoints, which is squarely in Helmet's lane.</p>
+<p>Offense at criminal-group scale. Straiker reported a group
+coordinating Grok, Claude and Kimi agents against 400+ Latin American
+financial targets. Wiz documented an AI agent running a whole cloud
+intrusion on its own. OpenAI expanded misalignment monitoring to all
+frontier RL runs and internal Codex use. Labs are becoming customers for
+containment tooling.</p>
+<p>MCP CVEs keep coming: an SDK token-audience flaw, nine MCP Inspector
+advisories and an AWS MCP Server sandbox flaw within four days. The
+source is a vendor roundup and the CVE IDs were not checked against
+NVD.</p>
+<p>Model vendors are moving into defensive cyber. Mistral's open-weight
+Large 4 is pitched partly at defensive security, with a vetted cyber
+variant (single source). Cohere is building 'Cohere Cyber' around AISLE.
+Self-hostable cyber models will squeeze startups whose only asset is a
+frontier-API wrapper.</p>
+<p>Failures &amp; Pivots</p>
+<p>No AI-security shutdowns or layoffs found. Scope flags for the next
+cleanup pass: Dipp AI now positions as agent scaffolding rather than
+security, and OpenLeash looks like an OSS project rather than a
+company.</p>
+<p>New Venture Ideas</p>
+<p>88. Signed agent-instruction files and extension provenance for
+coding agents: only load AGENTS.md, skills and IDE extensions with a
+known signature, with tamper alerts tied to endpoint telemetry.</p>
+<p>89. MCP patch-evidence attestation: continuous inventory of MCP
+servers and SDK versions with audit-grade CVE status, for procurement
+and regulators.</p>
+<p>90. Default-deny egress for agent sandboxes and eval environments,
+with agent-aware allowlists and replayable logs.</p>
+<p>People &amp; Thought Leaders</p>
+<p>New: Yaron Singer (Frontier Security; academic AI-security founder,
+link pending verification), Nati Hazut (Bold Security), Amer Deeba
+(Northstar Security), Paul Price (CodeWall). Activity: Daniel Miessler's
+UL #548 frames 'The Hackening' and backs Jason Clinton's ~18-month
+'hunker down' estimate; Miessler spoke at [un]prompted II, chaired by
+Gadi Evron (SF, 10-27 to 10-29). Matt Suiche remains at Tolmo. No new
+ventures from the rest of the anchor list.</p>
+<p>Tools &amp; Open-Source Releases</p>
+<p>Nothing verified as released inside the window. Backfilled: OpenA2A
+(open-source agent and MCP scanner suite, Feb 2026, non-commercial),
+SentinelOne ClawSec and OneClaw (skill integrity and agent observability
+for OpenClaw), and GitHub Security Lab's seclab-taskflows-fuzzing
+(agent-written fuzz harnesses for C/C++, ~09-24).</p>
+<p>Conference Highlights</p>
+<p>[un]prompted II ran in San Francisco 10-27 to 10-29, but the agenda
+page was blocked; check the recordings next week. No AI talk recaps
+surfaced yet for Hexacon (10-16 to 10-17) or Offensive AI Con (10-4 to
+10-7). Black Hat Europe (Dec 9-10) Arsenal is not indexed yet. The
+Fortune/Lightspeed Cyber 60 2027 list (~10-28) was the main list
+event.</p>
+<p>Newsletter Roundup</p>
+<p>Unsupervised Learning #548 (10-26): The Hackening, a backdoored open
+model built for under $50 that stole credentials through Codex, AI-first
+PHP RCEs, the LiteLLM poisoning, and Wiz's AI-run intrusion. Software
+Strategies (10-26), '20 Cybersecurity Startups to Watch in 2027': nine
+of 20 sell agent control, identity or offensive testing, and it surfaced
+Reach Security. Venture in Security: only a title was visible ('Today's
+AI-powered SOC companies are tomorrow's security service providers'),
+with no date. AISecHub: still lapsed on Medium.</p>
+<p>Helmet Watch</p>
+<p>No Helmet news in the window, and Helmet is not on the Fortune Cyber
+60 2027 list. Competitors: JetStream made the Fortune list. Pluto
+published Hugging Face malware research. The Mintive (ex-MintMCP)
+rebrand is still confirmed only by a competitor's page. Runlayer,
+Traceforce, Sondera, Guild.ai, Arrakis, Xpander and BAND were quiet. The
+AGENTS.md and extension attacks are the most Helmet-relevant theme this
+week. Northstar's MCP-exposed context graph sits next to Helmet's
+agent-inventory story without overlapping it directly.</p>
+<p>Integrity &amp; Process Notes</p>
+<p>Integrity check: 0 hard failures, 0 orphans, before and after the
+write. Hygiene carry-forward: Exaforce and Token Security duplicates
+(merge in a cleanup pass), and 9 rows stale beyond 120 days. Stubs: 7 of
+10 filled (Traceforce HQ, Kazimi founders, Console founder and funding,
+Hashgraph Online HQ and president, Dipp AI, ScanMCP maker, Aegis funding
+marked none). Still unresolved: OpenLeash, Ontinue, Occludra.
+Carry-forward names Tynapse, Zaperon and Escape were resolved into
+rows.</p>
+<p>Verify next run: Frontier Security / Singer (single source),
+Northstar HQ, the AIShield close, Aembit's Series A lead, and the MCP
+CVE IDs against NVD. Sifted was unfetchable again and MoneyControl was
+skipped. No prompt-injection content was encountered in fetched
+pages.</p>
 <p>Weekly Update — Week of 2026-10-19</p>
 <p>Window: 2026-10-16 to 2026-10-23 (7 days; Harmonic's 10-14 round
 included as an edge catch-up). Normal weekly run. About 84 searches
