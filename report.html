@@ -1735,6 +1735,177 @@ with IR firms and MSSPs for distribution.</p>
 runtime that reasons about agent plans, tool calls, and data lineage,
 with simulation, a 'deny-explain' UX, and auditing built in.</p>
 <p><strong>10. Update cadence</strong></p>
+<p>Weekly Update — Week of 2026-11-02</p>
+<p>Window: 2026-10-30 to 2026-11-06 (7 days). Normal weekly run; the
+next quarterly deep dive is due around 2026-11-19 (90 days after
+2026-08-21).</p>
+<p>The consolidation story got real this week. CrowdStrike signed to buy
+two AI-security startups in one go, and Palo Alto Networks is reported
+to be negotiating for two more. Money kept flowing to data security
+repositioned around agents.</p>
+<p>Funding Activity</p>
+<p>2026-11-04: Sentra raised $150M led by Capital One Ventures (board
+seat), with Bessemer, Zeev, Standard Investments, Munich Re Ventures and
+Key1. Total is now above $250M. Sentra now calls itself "agentic data
+security": it maps what data human and AI identities can reach and
+revokes risky access. Valuation was not disclosed (SecurityWeek,
+CTech).</p>
+<p>2026-11-05: Brava Security came out of stealth with a $15M seed led
+by Pitango and F2, with angels from Anthropic, Microsoft and Check
+Point. Its agents predict the telemetry each attack technique would
+leave, compare that with the SIEM's actual sources and rules, and tune
+the gaps, without executing attacks (Ynet; CTech list). Do not confuse
+it with an unrelated identity company of the same name.</p>
+<p>2026-11-03: CyberKord (Milan) raised a EUR2.7M pre-seed led by 360
+Capital for an agent that finds root cause and simulates fixes on a
+digital twin of the customer's IT estate before applying them
+(Tech.eu).</p>
+<p>Catch-ups logged this week: Infisical $40M Series B at $600M led by
+Elad Gil (10-28; Agent Vault keeps real credentials away from agents);
+Ultra Security $10M seed (10-22; MCP checkpoint); Opsin $21M co-led by
+SYN Ventures and Race Capital (10-19; agent governance); AIM
+Intelligence ~$7M Series A led by Samsung Venture Investment (Seoul,
+April); Mirror Security $2.5M pre-seed (Dublin, Dec 2025; FHE for
+RAG/inference); Eye Security EUR60M Series C (June; borderline scope,
+MDR plus insurance); Boost Security $4M extension plus the SecureIQx and
+Korbit tuck-ins (May; single aggregator source).</p>
+<p>Cyera remains in early talks at about $20B (The Information, 10-30).
+Not logged as a round.</p>
+<p>Exits &amp; M&amp;A</p>
+<p>2026-11-03: CrowdStrike signed definitive agreements at Fal.Con
+Europe to buy Fiddler AI (~$400M) and Dreadnode (~$95M), $495M in total,
+mostly cash plus stock that vests. Fiddler becomes "Falcon Observe" for
+monitoring agents after deployment; Dreadnode supplies red teaming
+before deployment. Expected to close in Q4 of CrowdStrike's fiscal 2027
+(Dealroom citing WSJ/Forbes/CrowdStrike; SecurityWeek).</p>
+<p>2026-11-05, talks only and not logged as exits: Palo Alto Networks is
+reported to be negotiating for Clutch Security (~$500M cash plus
+milestones, on ARR near $10M, so roughly 50x) and, separately, Beacon
+Security (no price; CTech single source). Both rows are flagged.</p>
+<p>Rumour status: CrowdStrike-Orion still unconfirmed, and CrowdStrike
+bought elsewhere this week. Datadog-Upwind looks dead now that Upwind
+has kept raising alone ($400M at $3.8B). OpenAI-Trail of Bits is still
+early talks. Cohere-AISLE is still an LOI. Nothing new on
+Hex-Rays-HexAI.</p>
+<p>New Entrants</p>
+<p>Added to Companies: Brava Security, CyberKord, Infisical, Ultra
+Security, Mirror Security, AIM Intelligence, Forever Security, Eye
+Security (borderline), Boost Security, and Descope (an integrity fix: it
+was in Themes and on the Fortune Cyber 60 with no row; its funding and
+HQ come from prior knowledge and need verifying).</p>
+<p>Under the hood: Infisical and Ultra are deterministic infrastructure
+(a credential-injection proxy, and natural-language policies compiled
+into local enforcement) with no model claims. Brava says it built its
+own models for predicting attack telemetry; whether they are trained
+in-house or wrap frontier LLMs is not disclosed. Mirror Security's moat
+is cryptographic (encrypted vectors and FHE), and it is
+model-agnostic.</p>
+<p>Tracked-Startup Updates</p>
+<p>Updated in place: Fiddler AI and Dreadnode (acquisition announced),
+Sentra (round, USP and architecture rewritten), Clutch and Beacon (PANW
+talks), Opsin (round, pivot to agent governance), Cathedral (dispute
+with Anthropic over a breach claim, see below), Trent AI (Neil Lawrence
+linked), and Noma, 7AI, Irregular and Corma (Fortune Cyber 60
+2026-27).</p>
+<p>Cathedral says its agents got into Anthropic's internal systems in
+under 12 hours through third-party business software. Anthropic says the
+scope was limited, that it cut access the same day, and that Cathedral
+broke its bug-bounty rules (WaPo via SecurityWeek). The row now carries
+a reputational-risk flag.</p>
+<p>Theme Signals</p>
+<p>Incumbents are buying the whole agent lifecycle. CrowdStrike paired
+testing before deployment (Dreadnode) with monitoring after (Fiddler) in
+one announcement, and Sysdig shipped agent runtime governance as a
+built-in feature. Standalone runtime and red-team startups are now
+tuck-in targets.</p>
+<p>Palo Alto is consolidating agent identity and SOC data. Parallel
+talks for Clutch (NHI) and Beacon (AI-SOC context layer) at about 50x
+ARR show the premium for agent-identity assets.</p>
+<p>Data security and secrets vendors are rebranding around agent access:
+Sentra's "agentic data security", Infisical's Agent Vault, Opsin's agent
+risk graph.</p>
+<p>Criminals are now using open-source offensive agent frameworks. In
+the same week: Google GTIG's "ARTEX and Friends" report, CrowdStrike
+naming four actors using AI coding agents, CyberStrikeAI running 44
+agents against 19 organisations, and Talos on the VOLTA infostealer,
+which sends stolen data to Claude, Kimi or Gemini to rank victims. Entry
+vectors are still mundane (default credentials, exposed admin panels,
+OAuth apps).</p>
+<p>Instruction files and IDE extensions are the developer supply chain:
+a backdoored Claude Code extension spread through Cursor's marketplace,
+and GitHub repos padded to 13.7MB to slip past code search fire hooks in
+agent IDEs. MCP checkpoint vendors are crowding together and competing
+on compliance certifications (Ultra lists SOC 2, ISO 42001 and FedRAMP
+20x).</p>
+<p>Frontier labs keep industrialising vulnerability discovery: OpenAI
+says its agents found and patched 948 Linux kernel privilege-escalation
+bugs in one run. Reports of a "GPT-6 Cyber" model are unconfirmed.</p>
+<p>Failures &amp; Pivots</p>
+<p>No AI-security shutdowns or layoffs found in the window. Pivots:
+Opsin moved from Copilot oversharing to agent governance, and Sentra and
+Infisical repositioned around agents. Lazarus AI ($43M, 11-04) was
+reviewed and left out of scope (insurance document AI).</p>
+<p>New Venture Ideas</p>
+<p>Context-file provenance and enforcement ("code signing for agent
+instructions"): coding agents load only signed AGENTS.md, rules and
+extension files, with endpoint enforcement.</p>
+<p>AI-found-vulnerability patch-throughput platform: triage, reproduce,
+test and ship patches at the pace frontier-lab agents now find bugs (948
+kernel bugs in one run).</p>
+<p>Regulator-grade agent action ledger: a tamper-evident, independently
+attested record of agent tool calls for regulators, auditors and cyber
+insurers.</p>
+<p>People &amp; Thought Leaders</p>
+<p>New: Chase Lee (Ultra Security founder, previously founded Trustpage,
+which Vanta bought), Gal Weizman and Omer Samet (Forever Security,
+AGENTS.md hijack research), Neil Lawrence (Cambridge; Trent AI, role
+unclear), Rob T. Lee (ex-SANS, now Chief AI Officer at Dragos). Updated:
+Niv Braun, Lior Div, Alon Pluda (Fortune Cyber 60), Gal Tal-Hochberg
+(Beacon/PANW talks), Ankur Shah (Straiker CyberCartel report). No
+ventures or moves found for the other anchors this week.</p>
+<p>Tools &amp; Open-Source Releases</p>
+<p>Logged: Google GTIG/Mandiant "ARTEX and Friends" (10-30),
+CyberStrikeAI (open-source multi-agent offensive framework seen in the
+wild), HexStrike AI (maintainer and repo not re-verified this run), the
+Cloud Security Alliance research note on multi-agent offensive
+frameworks (10-28), and Cisco Talos's VOLTA analysis (10-31). None of
+the maintainers is a commercial company that needs a row.</p>
+<p>Conference Highlights</p>
+<p>Fal.Con Europe (Barcelona) brought the CrowdStrike acquisitions.
+Nothing from [un]prompted II (10-27 to 10-29) is indexed yet; check the
+recordings next week. Black Hat Europe and Black Hat MEA (both December)
+have no AI pages that load yet.</p>
+<p>Newsletter Roundup</p>
+<p>Unsupervised Learning #549 (11-04): the reported 53-minute Anthropic
+Linux remote-root demo (single source), ARTEX in the wild, one actor
+breaking into sites for about $50 each with agents, and the backdoored
+Claude Code extension in Cursor's marketplace. Venture in Security
+(11-04): channel partners matter more in an AI-first market; "everyone
+is securing agents" is now a CISO noise problem. No companies
+highlighted. AISecHub: the Medium page came back empty again (lapsed for
+a third week). Software Strategies: no current roundup; MEAN CEO's
+November roundup used instead (it surfaced Infisical; Crux Labs
+unverified).</p>
+<p>Helmet Watch</p>
+<p>No Helmet news. Competitor movement: Ultra Security came out of
+stealth (10-22, $10M) with an on-device MCP checkpoint sold on
+compliance, a direct overlap. SYN Ventures, Helmet's lead investor,
+co-led Opsin's $21M agent-governance round. Nothing new from Traceforce,
+Asymptote, Sondera, Runlayer, Mintive, JetStream, Guild, Arrakis,
+Xpander, BAND or Pluto. Northstar's 11-02 coverage is the same $7M
+seed.</p>
+<p>Integrity &amp; Process Notes</p>
+<p>Integrity check before the write: 0 hard failures, 0 orphans. Descope
+and Forever Security were advisory Theme orphans and now have rows. Stub
+pass: EmpowerID (HQ and founding year confirmed, no disclosed funding),
+FIOR (founder background; HQ conflict, London vs a "Stamford, UK"
+listing), Classie (HQ confirmed); Occludra still unresolved.
+Carry-forward duplicates: Exaforce, Token Security.</p>
+<p>Verify next run: the Descope seed amount and HQ (prior knowledge),
+Boost Security (single aggregator), PANW-Clutch/Beacon signing,
+Dreadnode CEO naming (the source says Brad Palm), Neil Lawrence's Trent
+AI role, and Forever Security's funding and HQ. Sifted and KrAsia did
+not return usable index pages this week; Tech.eu and Inc42 stood in.</p>
 <p>Weekly Update — Week of 2026-10-26</p>
 <p>Window: 2026-10-23 to 2026-10-30 (7 days). Normal weekly run; next
 quarterly deep dive is due around 2026-11-19 (90 days after 2026-08-21).
