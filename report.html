@@ -1735,6 +1735,188 @@ with IR firms and MSSPs for distribution.</p>
 runtime that reasons about agent plans, tool calls, and data lineage,
 with simulation, a 'deny-explain' UX, and auditing built in.</p>
 <p><strong>10. Update cadence</strong></p>
+<p>Weekly Update — Week of 2026-11-09</p>
+<p>Window: 2026-11-06 to 2026-11-13 (7 days). Normal weekly run; the
+next quarterly deep dive is due on the 2026-11-20 run (90 days after
+2026-08-21).</p>
+<p>This week was about buyers, not builders. Three AI-security companies
+changed hands (Pillar Security to Vanta, AuthMind to IBM, AISLE closing
+into Cohere), and Cognition's late-October purchase of Corridor surfaced
+as a catch-up. Two of the four acquirers are not security vendors at
+all: a GRC platform and an AI coding company. On the funding side, Bay
+came out of stealth with $50M and a pitch that sits squarely on top of
+Helmet's.</p>
+<p>Funding Activity</p>
+<p>2026-11-10: Daylight raised an $80M Series B led by Goldman Sachs
+Alternatives (Calcalist estimates ~$400M valuation; $120M total).
+Agentic MDR built by ex-Torq founders; claims &gt;40x revenue growth
+year on year and now routes prompt-injection and risky-MCP alerts into
+the same managed queue.</p>
+<p>2026-11-10: Bay (Tel Aviv) emerged from stealth with $50M: a $37M
+Series A led by Battery Ventures plus a previously undisclosed $13M seed
+led by YL Ventures and Striker. Micron Ventures, M12 and Assaf Rappaport
+also participated. Customers named: Micron, Wix, ClickUp, Peloton.</p>
+<p>Catch-up: &amp;Truth emerged 2026-10-29 with a $70M seed for
+AI-driven formal verification of code (Lean-based proofs; co-founded by
+Stanford's Clark Barrett). depthfirst's row was corrected to Series B
+($80M led by Meritech, 2026-03-31; ~$580M reported valuation; first
+in-house model dfs-mini1).</p>
+<p>Exits &amp; M&amp;A</p>
+<p>2026-11-09: Vanta signed to acquire Pillar Security. Calcalist put
+the price at ~$150M; Vanta disputed it and did not disclose. Pillar
+becomes Vanta's Israel R&amp;D centre, and Vanta's roadmap puts AI
+inventory and runtime monitoring in January 2027 with enforcement later
+in 2027. This is a compliance platform buying runtime AI security so it
+can turn agent behaviour into audit evidence.</p>
+<p>2026-11-12: IBM acquired AuthMind (price n/d), an
+identity-observability company that watches how agent and machine
+credentials are used after issuance. It folds into HashiCorp Vault.
+Confirmed via ID Tech Wire citing IBM's newsroom; IBM's own post was not
+fetched.</p>
+<p>2026-11-10: Cohere closed its AISLE acquisition (LOI logged 10-15);
+AISLE now operates as Cohere Cyber, with Ondrej Vlcek as SVP and Jaya
+Baloo as Cohere CISO. Catch-up: Cognition acquired Corridor (announced
+10-28); Jack Cable and Ashwin Ramaswami join to build Devin Security.
+IonQ-Elisity is reported closed at ~$1.15B (single-source snippet;
+tracker value left at the up-to-$1.3B headline).</p>
+<p>Still rumours, not logged as exits: Palo Alto Networks-Clutch
+(~$500M), Palo Alto-Beacon, CrowdStrike-Orion, OpenAI-Trail of Bits, and
+Cyera's ~$20B raise talks. No AI-security acqui-hire into a frontier lab
+or big-tech company surfaced in the window.</p>
+<p>New Entrants</p>
+<p>Added to Companies: Daylight, Bay, AuthMind and &amp;Truth, each with
+USP and under-the-hood fields. Bay's architecture is the most specific:
+an ephemeral scanner (Wave) inventories agents, extensions and local
+models; a static binary (Enforcer) hooks native AI tools and decides per
+action on the device; and Lighthouse generates policy from 30 days of
+historical agent telemetry. Models behind its verdicts are not
+disclosed. &amp;Truth is the outlier: formal proofs rather than
+probabilistic scanning.</p>
+<p>Tracked-Startup Updates</p>
+<p>Updated in place: AISLE, Pillar Security and Vanta (M&amp;A);
+Corridor and Elisity (exits); 7AI (PLAID ELITE incident-response
+retainer, 11-12, says $166M raised); Dropzone AI (FedRAMP High via 2F
+Game Warden); Prophet Security (MCP server and agentic dashboards,
+11-12); Torq (Peter Polizzi named President and COO with an acquisition
+mandate, 11-09); depthfirst (Series B, owns models); Lasso (two-engine
+architecture: CPU-only LEAP guardrail plus self-hosted RAPID LLM judge);
+XBOW, Token Security, Apiiro, Runlayer, Cyera and Orion (minor). Rumour
+status noted on Clutch, Beacon, Orion, Trail of Bits and Cyera.</p>
+<p>Theme Signals</p>
+<p>Frontier labs gate their most capable cyber models. OpenAI released
+GPT-6 Cyber on 11-05 to approved Daybreak customers only, its first
+model rated Critical for cyber, and followed on 11-12 with Daybreak Red
+Team (agentic web-app pentest) and Daybreak Defense Factory
+(agent-drafted patches as PRs). Google's Fairwind and Anthropic's
+restricted Mythos tier follow the same pattern (the 'Mythos 5.2' name
+rests on one source).</p>
+<p>MCP gateways are now an attack surface in their own right. In one
+week AWS (mcp-gateway-registry SSRF), Microsoft (MCP Gateway elevation
+of privilege, Patch Tuesday) and IBM (ContextForge identity
+over-propagation) each disclosed gateway CVEs. Some coding-agent CVE
+numbers came from aggregators and should be checked against NVD.</p>
+<p>Platform and GRC vendors are buying AI runtime security. Vanta-Pillar
+and IBM-AuthMind follow CrowdStrike's Fiddler and Dreadnode deals of the
+prior week. Standalone runtime and agent-identity players are becoming
+tuck-ins, and the buyers increasingly come from outside core
+security.</p>
+<p>Agent control planes are converging on 'discover, then enforce at the
+action'. Bay, Pluto, Ultra, Runlayer and Helmet all pitch an inventory
+of agents, MCP servers and skills plus per-action enforcement. The
+difference is moving to deployment friction (agentless, minutes to
+deploy), AI-generated policy, and proof of value from historical
+logs.</p>
+<p>AI-SOC vendors are moving into services, federal and MCP: 7AI's IR
+retainer, Dropzone's FedRAMP High, Prophet's MCP server, Daylight's
+agentic MDR round. The serving stack is also exposed: NEAR AI disclosed
+that an SGLang flaw let an attacker run code on an inference server
+inside its confidential-compute environment (11-08). Agent artifacts are
+a supply chain too: Microsoft's 'Lazarus' backdoors (fewer than 10
+neurons edited), Cyera's 70 malicious agent skills, and Apiiro's finding
+that Claude Code permission files leaked 2,539 secrets across 1,994
+public repos. Deepfake payment fraud keeps scaling (a $129M indictment
+unsealed 11-05).</p>
+<p>Failures &amp; Pivots</p>
+<p>No AI-security shutdowns or layoffs in the window. Adjacent: Axonius
+cut 22% of its Israeli R&amp;D staff in an AI-driven restructuring
+(11-09). Artex, the Chinese autonomous pentest tool, said it would go
+closed-source after Censys found 800+ exposed, unauthenticated
+instances. Hex Security has renamed itself Parameter.</p>
+<p>New Venture Ideas</p>
+<p>#94 Attested, hardened inference runtime ('EDR for the model
+server'): a drop-in hardened sidecar or fork for SGLang/vLLM with
+syscall and egress policy and attestation, because a bug in the serving
+engine exposes every prompt even inside a TEE (NEAR AI).</p>
+<p>#95 Agent-artifact secret scanning: scanners tuned for .claude/,
+.cursor/, memory and permission files, where coding agents persist
+secrets that gitleaks and TruffleHog miss (Apiiro study).</p>
+<p>#96 Trusted-access broker for gated frontier cyber models: KYC, scope
+enforcement and audit logging that let mid-size MSSPs and pentest firms
+qualify for GPT-6 Cyber, Mythos and Fairwind-class access and operate it
+safely.</p>
+<p>People &amp; Thought Leaders</p>
+<p>New: Clark Barrett (Stanford; &amp;Truth co-CEO, an academic
+AI-security founder), Insu Yun (KAIST; Team Atlanta, AIxCC winner),
+Dimitris Papailiopoulos (Lazarus research; affiliation to verify), Amy
+Chang (Cisco AI threat research) and Peter Polizzi (Torq President and
+COO). Updated: Bruce Schneier ('AI Doesn't Have to Go Rogue to Break the
+World', 11-13), Simon Willison, Daniel Miessler, Ross Haleliuk (still in
+stealth, no launch), Kevin Mandia, Helen Toner, Lenny Zeltser. The
+anchor-list people-to-company searches found no new ventures.</p>
+<p>Tools &amp; Open-Source Releases</p>
+<p>Logged: OpenAI Daybreak Red Team and Defense Factory (11-12); Cisco
+AI Defense Project Quarry (open-source DSL and engine for agent-session
+detection rules); Microsoft 'Lazarus' neuron-edit backdoor research and
+detector; MetaPI (arXiv prompt-injection benchmark converter); OpenAI's
+948 Linux kernel LPE pipeline (11-04, catch-up); DeepMind RSA-1024 agent
+cryptanalysis (11-06); Apiiro's Claude Code settings-file secret study;
+Jason Haddix's SpikeStrip (decoys against AI attacker agents; single
+source); Cloudflare Zero Wire (CVE briefing feed with agent-ready
+prompts).</p>
+<p>Conference Highlights</p>
+<p>POC2026 (Seoul, 11-12 to 11-13) was the only conference in the
+window. KAIST's '1 Man, 1 Month, 45 Bugs' talk on scaling AI-assisted
+bug hunting and a Codex Desktop RCE talk stood out (some agenda items
+may be from 2025; verify). OpenAI's 'Cyber at the Frontier' event
+(11-12) launched Daybreak. Coming up: CCS (11-16 to 11-18, The Hague),
+Microsoft Ignite (11-17 to 11-20, agent identity and governance) and
+Black Hat Europe (12-07 to 12-10).</p>
+<p>Newsletter Roundup</p>
+<p>Unsupervised Learning #550 (11-08) and #551 (11-12): Grok Build share
+links leaking through passive DNS, Fireworks AI's second LLMjacking
+breach, Cyera's malicious-skills research, Lenny Zeltser on deception,
+an agent-as-judge confirmation-bias paper; Orion, Cyera and Doppel
+sponsored. Venture in Security: no new issue (latest 11-04 on channel
+partners in the AI era). Software Strategies Blog: no funding post in
+the window (latest 10-26, '20 Cybersecurity Startups to Watch in 2027').
+Bonus: Adversa AI's November agent-security digest (43 items, mostly
+October). AISecHub remains lapsed.</p>
+<p>Helmet Watch</p>
+<p>No Helmet news; the latest blog post is the 10-19 platform expansion.
+The direct fetch of helmet.sh and its GitHub org was blocked again, so
+the site was read through its public Cloudflare Pages mirror and GitHub
+activity remains unchecked. Competitor movement: Bay is the new direct
+competitor and the best-funded entrant at launch ($50M, Battery and YL),
+with agentless discovery, per-action enforcement and AI-generated
+policy. Runlayer published a free 'MCP Explained' guide (11-05, single
+source). Traceforce, Asymptote, Sondera, Mintive, JetStream, Guild,
+Arrakis, Xpander, BAND, Ultra, Pluto and Island were quiet.</p>
+<p>Integrity &amp; Process Notes</p>
+<p>Integrity check after the write: 0 hard failures; 1 orphan found and
+fixed (KAIST, Insu Yun's employer, added to the allowlist as a
+university). Every new exit target (Pillar, AuthMind, Corridor) already
+had or now has a Companies row; new tool maintainers are big-tech
+divisions, an academic group or an individual. Stubs remediated (9):
+Copperhelm (HQ), Hex Security/Parameter (HQ, funding single source), MCP
+Defender (exit date 2025-09-05; founders undisclosed), Manifold
+(founders), Certiv (founders, HQ), DynamoAI (~$19.3M), BAND (HQ,
+founders), Moir (HQ confirmed undisclosed; ~$50M seed still only talks),
+Elisity (funding $70.5M). Carry forward: Trussed AI, RemoteThreat,
+Vijil, Fabraix stubs; verify IonQ-Elisity close value, the AuthMind deal
+on IBM's own newsroom, the coding-agent CVE numbers, and
+Papailiopoulos's affiliation. Duplicates still deferred: Exaforce, Token
+Security. Searches used: ~95 across three parallel agents, all inside
+their caps. No prompt injection encountered.</p>
 <p>Weekly Update — Week of 2026-11-02</p>
 <p>Window: 2026-10-30 to 2026-11-06 (7 days). Normal weekly run; the
 next quarterly deep dive is due around 2026-11-19 (90 days after
